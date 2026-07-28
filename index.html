@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Kinematika Vektor | SMAK Kol. St. Yusup Malang</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700;14..32,800;14..32,900&display=swap" rel="stylesheet" />
   <style>
     * {
       margin: 0;
@@ -13,23 +13,23 @@
     }
 
     body {
-      background: #eef3f9;
+      background: #e8edf6;
       font-family: 'Inter', 'Segoe UI', system-ui, sans-serif;
-      padding: 36px 48px;
-      color: #0b1a33;
+      padding: 32px 48px;
+      color: #0a1628;
       display: flex;
       justify-content: center;
       min-height: 100vh;
     }
 
     .container {
-      max-width: 1500px;
+      max-width: 1520px;
       width: 100%;
       background: #ffffff;
-      border-radius: 44px;
-      padding: 40px 48px 32px;
-      box-shadow: 0 24px 60px rgba(0, 20, 50, 0.12), 0 1px 4px rgba(0,0,0,0.04);
-      border: 1px solid rgba(255,255,255,0.4);
+      border-radius: 48px;
+      padding: 40px 50px 32px;
+      box-shadow: 0 30px 70px rgba(10, 22, 40, 0.12), 0 2px 8px rgba(0,0,0,0.03);
+      border: 1px solid rgba(255,255,255,0.5);
     }
 
     /* ---------- HEADER ---------- */
@@ -38,81 +38,81 @@
       justify-content: space-between;
       align-items: flex-end;
       flex-wrap: wrap;
-      padding-bottom: 20px;
-      margin-bottom: 32px;
-      border-bottom: 3px solid #2563eb;
+      padding-bottom: 22px;
+      margin-bottom: 34px;
+      border-bottom: 4px solid #1a3a6b;
     }
 
     .header-left h1 {
-      font-size: 2.8rem;
-      font-weight: 800;
-      letter-spacing: -0.04em;
-      color: #0b1a33;
+      font-size: 3.0rem;
+      font-weight: 900;
+      letter-spacing: -0.03em;
+      color: #0a1628;
     }
     .header-left h1 span {
-      color: #2563eb;
+      color: #1a3a6b;
     }
     .header-left .sub {
-      font-size: 1.15rem;
+      font-size: 1.2rem;
       font-weight: 500;
-      color: #334155;
+      color: #2c3e5c;
       margin-top: 4px;
     }
     .header-right {
       display: flex;
-      gap: 14px;
+      gap: 16px;
       align-items: center;
       flex-wrap: wrap;
     }
     .header-right .badge-school {
-      background: #1e293b;
-      color: #f1f5f9;
-      padding: 8px 28px;
+      background: #0a1628;
+      color: #f0f4fc;
+      padding: 8px 32px;
       border-radius: 60px;
       font-size: 0.95rem;
-      font-weight: 600;
+      font-weight: 700;
       letter-spacing: 0.3px;
     }
     .header-right .badge-inter {
-      background: #2563eb;
-      color: white;
-      padding: 8px 24px;
+      background: #c9a84c;
+      color: #0a1628;
+      padding: 8px 28px;
       border-radius: 60px;
       font-size: 0.85rem;
-      font-weight: 700;
+      font-weight: 800;
       text-transform: uppercase;
-      letter-spacing: 0.6px;
+      letter-spacing: 0.8px;
     }
 
     /* ---------- CARDS ---------- */
     .card {
-      background: #fafcff;
+      background: #f8faff;
       border-radius: 28px;
-      padding: 26px 30px 30px;
+      padding: 28px 32px 32px;
       margin-bottom: 28px;
-      border: 1px solid #e6edf6;
+      border: 1px solid #e2eaf5;
       box-shadow: 0 2px 8px rgba(0,0,0,0.02);
       transition: border 0.2s;
     }
     .card:hover {
-      border-color: #c8d9ec;
+      border-color: #b8cce0;
     }
 
     .card-title {
-      font-size: 1.6rem;
-      font-weight: 700;
-      color: #0b1a33;
+      font-size: 1.7rem;
+      font-weight: 800;
+      color: #0a1628;
       display: flex;
       align-items: center;
-      gap: 14px;
-      margin-bottom: 18px;
+      gap: 16px;
+      margin-bottom: 20px;
     }
     .card-title .chip {
-      background: #e5edf9;
-      color: #1e4a8a;
+      background: #dce6f5;
+      color: #1a3a6b;
       font-size: 0.8rem;
       font-weight: 700;
-      padding: 4px 18px;
+      padding: 4px 20px;
       border-radius: 60px;
       letter-spacing: 0.3px;
     }
@@ -121,7 +121,7 @@
     .grid-2 {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 32px;
+      gap: 34px;
     }
     .grid-3 {
       display: grid;
@@ -132,8 +132,8 @@
     /* ---------- CANVAS ---------- */
     .canvas-wrap {
       background: #ffffff;
-      border-radius: 20px;
-      border: 1px solid #e2eaf2;
+      border-radius: 22px;
+      border: 1px solid #dce6f2;
       padding: 6px;
       box-shadow: inset 0 2px 6px rgba(0,0,0,0.02);
     }
@@ -142,7 +142,7 @@
       width: 100%;
       height: auto;
       aspect-ratio: 16 / 10;
-      border-radius: 16px;
+      border-radius: 18px;
       background: #ffffff;
     }
 
@@ -150,96 +150,97 @@
     .slider-group {
       display: flex;
       flex-wrap: wrap;
-      gap: 10px 28px;
+      gap: 10px 30px;
       align-items: center;
-      margin: 10px 0 4px;
+      margin: 12px 0 4px;
     }
     .slider-group label {
       display: flex;
       align-items: center;
       gap: 10px;
-      font-weight: 600;
+      font-weight: 700;
       font-size: 0.95rem;
-      color: #1e293b;
+      color: #0a1628;
     }
     .slider-group input[type="range"] {
-      width: 130px;
+      width: 140px;
       height: 5px;
       -webkit-appearance: none;
       appearance: none;
-      background: #d0dcec;
+      background: #c8d8ea;
       border-radius: 10px;
       outline: none;
     }
     .slider-group input[type="range"]::-webkit-slider-thumb {
       -webkit-appearance: none;
       appearance: none;
-      width: 18px;
-      height: 18px;
-      background: #2563eb;
+      width: 20px;
+      height: 20px;
+      background: #1a3a6b;
       border-radius: 50%;
       border: 3px solid white;
-      box-shadow: 0 2px 8px rgba(37,99,235,0.3);
+      box-shadow: 0 2px 10px rgba(26,58,107,0.3);
       cursor: pointer;
     }
     .slider-group input[type="range"]::-moz-range-thumb {
-      width: 18px;
-      height: 18px;
-      background: #2563eb;
+      width: 20px;
+      height: 20px;
+      background: #1a3a6b;
       border-radius: 50%;
       border: 3px solid white;
-      box-shadow: 0 2px 8px rgba(37,99,235,0.3);
+      box-shadow: 0 2px 10px rgba(26,58,107,0.3);
       cursor: pointer;
     }
     .slider-group .val {
-      min-width: 44px;
-      font-weight: 700;
-      color: #2563eb;
-      font-size: 1rem;
+      min-width: 46px;
+      font-weight: 800;
+      color: #1a3a6b;
+      font-size: 1.05rem;
     }
 
     /* ---------- RESULT BOX ---------- */
     .result-box {
-      background: #eaf1fd;
-      padding: 14px 22px;
-      border-radius: 16px;
-      font-size: 1.1rem;
+      background: #e8effb;
+      padding: 14px 24px;
+      border-radius: 18px;
+      font-size: 1.15rem;
       margin-top: 12px;
-      border-left: 5px solid #2563eb;
-      color: #0b1a33;
-      font-weight: 500;
+      border-left: 6px solid #1a3a6b;
+      color: #0a1628;
+      font-weight: 600;
     }
     .result-box strong {
-      color: #0b1a33;
-      font-weight: 700;
+      color: #0a1628;
+      font-weight: 800;
     }
 
     .formula-box {
-      background: #eaf1fd;
-      padding: 16px 20px;
-      border-radius: 16px;
+      background: #e8effb;
+      padding: 18px 22px;
+      border-radius: 18px;
       font-family: 'Inter', 'Courier New', monospace;
-      font-size: 1.25rem;
+      font-size: 1.35rem;
       text-align: center;
-      border: 1px solid #d4e0f0;
-      margin: 8px 0;
-      color: #0b1a33;
-      font-weight: 600;
+      border: 2px solid #c8d8ea;
+      margin: 10px 0;
+      color: #0a1628;
+      font-weight: 700;
     }
 
     /* ---------- PENJELASAN ---------- */
     .explanation {
-      background: #f2f7fe;
-      padding: 16px 20px;
-      border-radius: 16px;
-      font-size: 0.95rem;
-      line-height: 1.7;
-      color: #1e293b;
-      margin-top: 8px;
-      border-left: 4px solid #7c3aed;
+      background: #f0f5fe;
+      padding: 18px 24px;
+      border-radius: 18px;
+      font-size: 1.0rem;
+      line-height: 1.8;
+      color: #0a1628;
+      margin-top: 10px;
+      border-left: 5px solid #c9a84c;
     }
     .explanation strong {
-      color: #0b1a33;
+      color: #0a1628;
+      font-weight: 800;
     }
 
     /* ---------- TABEL TRIG ---------- */
@@ -247,8 +248,8 @@
       display: grid;
       grid-template-columns: repeat(5, 1fr);
       gap: 4px;
-      font-size: 0.95rem;
-      max-width: 500px;
+      font-size: 1.0rem;
+      max-width: 540px;
       margin: 6px 0;
     }
     .table-trig .cell {
@@ -256,121 +257,136 @@
       padding: 8px 4px;
       border-radius: 12px;
       text-align: center;
-      border: 1px solid #e2eaf2;
-      font-weight: 500;
+      border: 1px solid #dce6f2;
+      font-weight: 600;
     }
     .table-trig .cell.head {
-      background: #dce6f5;
-      font-weight: 700;
-      color: #0b1a33;
+      background: #d4e0f0;
+      font-weight: 800;
+      color: #0a1628;
     }
 
     /* ---------- REFERENSI ---------- */
     .ref-list {
       display: flex;
       flex-wrap: wrap;
-      gap: 8px 24px;
-      font-size: 0.85rem;
-      color: #1e4a6f;
+      gap: 8px 28px;
+      font-size: 0.9rem;
+      color: #1a3a6b;
       margin-top: 6px;
     }
     .ref-list .ref-item {
-      background: #eaf1fd;
-      padding: 4px 16px;
+      background: #e8effb;
+      padding: 6px 20px;
       border-radius: 40px;
-      border: 1px solid #d4e0f0;
+      border: 1px solid #c8d8ea;
+      font-weight: 500;
     }
 
     /* ---------- APLIKASI ---------- */
     .app-tags {
       display: flex;
       flex-wrap: wrap;
-      gap: 8px 14px;
+      gap: 8px 16px;
       margin: 6px 0;
     }
     .app-tags .tag {
-      background: #e5edf9;
-      padding: 6px 22px;
+      background: #dce6f5;
+      padding: 6px 24px;
       border-radius: 60px;
       font-size: 0.9rem;
-      font-weight: 600;
-      color: #1e3a7a;
-      border: 1px solid #cddef2;
+      font-weight: 700;
+      color: #1a3a6b;
+      border: 1px solid #b8cce0;
     }
 
     /* ---------- SOAL ---------- */
     .soal-item {
-      background: #f6f9ff;
-      border-radius: 18px;
-      padding: 16px 22px;
+      background: #f0f5fe;
+      border-radius: 20px;
+      padding: 18px 24px;
       margin: 14px 0;
-      border: 1px solid #e6edf6;
+      border: 1px solid #dce6f2;
     }
     .soal-item p {
-      font-size: 1rem;
-      font-weight: 500;
+      font-size: 1.05rem;
+      font-weight: 600;
       margin-bottom: 8px;
     }
     .soal-item input {
-      border: 2px solid #d4e0f0;
+      border: 2px solid #c8d8ea;
       border-radius: 12px;
-      padding: 8px 16px;
-      width: 140px;
-      font-size: 1rem;
-      font-weight: 500;
+      padding: 8px 18px;
+      width: 150px;
+      font-size: 1.0rem;
+      font-weight: 600;
       background: white;
     }
     .soal-item input:focus {
-      outline: 3px solid #2563eb;
+      outline: 3px solid #1a3a6b;
       border-color: transparent;
     }
     .soal-item .btn-cek {
-      background: #2563eb;
+      background: #1a3a6b;
       color: white;
       border: none;
-      padding: 8px 28px;
+      padding: 8px 32px;
       border-radius: 60px;
-      font-weight: 700;
+      font-weight: 800;
       font-size: 0.95rem;
       cursor: pointer;
       transition: 0.15s;
       margin-left: 10px;
     }
     .soal-item .btn-cek:hover {
-      background: #1d4ed8;
+      background: #0f2a4f;
       transform: scale(1.02);
     }
     .feedback {
       margin-top: 8px;
-      font-weight: 600;
-      font-size: 1rem;
+      font-weight: 700;
+      font-size: 1.0rem;
+    }
+
+    /* ---------- JAWABAN SOAL (ditampilkan) ---------- */
+    .jawaban-box {
+      background: #e8effb;
+      border-radius: 16px;
+      padding: 16px 22px;
+      margin-top: 16px;
+      border: 2px solid #c9a84c;
+      font-size: 0.95rem;
+      line-height: 1.8;
+    }
+    .jawaban-box strong {
+      color: #0a1628;
     }
 
     /* ---------- FOOTER ---------- */
     .footer {
-      margin-top: 32px;
+      margin-top: 34px;
       padding-top: 24px;
-      border-top: 2px solid #e6edf6;
+      border-top: 2px solid #dce6f2;
       font-size: 0.95rem;
-      color: #475569;
+      color: #2c3e5c;
       text-align: center;
       display: flex;
       justify-content: center;
-      gap: 32px;
+      gap: 40px;
       flex-wrap: wrap;
     }
     .footer strong {
-      color: #0b1a33;
+      color: #0a1628;
     }
 
     /* ---------- RESPONSIVE ---------- */
-    @media (max-width: 1100px) {
+    @media (max-width: 1150px) {
       .grid-2 { grid-template-columns: 1fr; }
       .grid-3 { grid-template-columns: 1fr 1fr; }
       body { padding: 20px; }
       .container { padding: 24px; }
     }
-    @media (max-width: 680px) {
+    @media (max-width: 700px) {
       .grid-3 { grid-template-columns: 1fr; }
       .header-left h1 { font-size: 2.0rem; }
       .header-right { flex-wrap: wrap; }
@@ -401,7 +417,7 @@
   <div class="card">
     <div class="card-title">📐 Trigonometri Dasar <span class="chip">pengulang</span></div>
     <div style="display:flex; flex-wrap:wrap; gap:20px 50px; align-items:center;">
-      <div style="background:#eaf1fd; border-radius:20px; padding:12px 32px; font-size:1.3rem; border:1px solid #d4e0f0; font-weight:600;">
+      <div style="background:#e8effb; border-radius:20px; padding:14px 36px; font-size:1.4rem; border:2px solid #c8d8ea; font-weight:700;">
         sin β = AC / BC &nbsp;·&nbsp; cos β = AB / BC
       </div>
       <div class="table-trig">
@@ -426,7 +442,7 @@
     <div class="grid-2">
       <div>
         <div class="canvas-wrap">
-          <canvas id="canvasUrai" width="540" height="320"></canvas>
+          <canvas id="canvasUrai" width="560" height="340"></canvas>
         </div>
         <div class="slider-group">
           <label>sudut α <input type="range" id="sliderUrai" min="0" max="90" value="35" step="1">
@@ -441,10 +457,13 @@
       <div>
         <div class="formula-box">F<sub>x</sub> = F · cos α &nbsp;&nbsp; F<sub>y</sub> = F · sin α</div>
         <div class="explanation">
-          <strong>Penjelasan:</strong> Sebuah vektor <strong>F</strong> (biru) dapat diuraikan menjadi dua komponen yang saling tegak lurus. 
+          <strong>Penjelasan:</strong> Sebuah vektor <strong>F</strong> (biru tua) dapat diuraikan menjadi dua komponen yang saling tegak lurus. 
           <strong>F<sub>x</sub></strong> (merah) adalah proyeksi F pada sumbu X, dan <strong>F<sub>y</sub></strong> (hijau) adalah proyeksi F pada sumbu Y.
           Geser sudut <strong>α</strong> dan besar <strong>F</strong> untuk melihat perubahan komponen.
         </div>
+        <p style="margin-top:10px; font-size:0.9rem; color:#2c3e5c;">
+          <strong>💡 Ingat:</strong> Komponen X selalu menggunakan cos, komponen Y selalu menggunakan sin.
+        </p>
       </div>
     </div>
   </div>
@@ -457,7 +476,7 @@
     <div class="grid-2">
       <div>
         <div class="canvas-wrap">
-          <canvas id="canvasJumlah" width="540" height="320"></canvas>
+          <canvas id="canvasJumlah" width="560" height="340"></canvas>
         </div>
         <div class="slider-group">
           <label>F₁ <input type="range" id="sliderF1" min="1" max="7" value="4" step="0.5">
@@ -474,10 +493,13 @@
       <div>
         <div class="formula-box">R = √(F₁² + F₂² + 2·F₁·F₂·cos α)</div>
         <div class="explanation">
-          <strong>Penjelasan:</strong> Dua vektor <strong>F₁</strong> (biru) dan <strong>F₂</strong> (ungu) dengan sudut <strong>α</strong> di antara keduanya.
+          <strong>Penjelasan:</strong> Dua vektor <strong>F₁</strong> (biru tua) dan <strong>F₂</strong> (ungu) dengan sudut <strong>α</strong> di antara keduanya.
           Resultan <strong>R</strong> (merah) adalah diagonal jajaran genjang. Besar R dihitung dengan aturan kosinus,
           sedangkan arah θ dihitung dari komponen-komponen resultan.
         </div>
+        <p style="margin-top:10px; font-size:0.9rem; color:#2c3e5c;">
+          <strong>💡 Kasus khusus:</strong> α = 0° → R = F₁ + F₂ (searah), α = 180° → R = |F₁ − F₂| (berlawanan arah).
+        </p>
       </div>
     </div>
   </div>
@@ -490,7 +512,7 @@
     <div class="grid-2">
       <div>
         <div class="canvas-wrap">
-          <canvas id="canvasPosisi" width="540" height="320"></canvas>
+          <canvas id="canvasPosisi" width="560" height="340"></canvas>
         </div>
         <div class="slider-group">
           <label>P<sub>x</sub> <input type="range" id="sliderPx" min="0" max="8" value="2" step="0.5">
@@ -509,10 +531,13 @@
       <div>
         <div class="formula-box">Δr = √[(Q<sub>x</sub>−P<sub>x</sub>)² + (Q<sub>y</sub>−P<sub>y</sub>)²]</div>
         <div class="explanation">
-          <strong>Penjelasan:</strong> Titik <strong>P</strong> (biru) dan <strong>Q</strong> (hijau) adalah posisi partikel di bidang XY.
+          <strong>Penjelasan:</strong> Titik <strong>P</strong> (biru tua) dan <strong>Q</strong> (hijau) adalah posisi partikel di bidang XY.
           Vektor perpindahan <strong>Δr</strong> (merah) adalah selisih vektor posisi Q − P.
           Besar Δr adalah jarak lurus antara P dan Q, sedangkan arahnya diukur dari sumbu X positif.
         </div>
+        <p style="margin-top:10px; font-size:0.9rem; color:#2c3e5c;">
+          <strong>💡 Ingat:</strong> Vektor posisi P = \(2\hat{i} + 4\hat{j}\), Q = \(6\hat{i} + 3\hat{j}\), maka Δr = \(4\hat{i} - 1\hat{j}\).
+        </p>
       </div>
     </div>
   </div>
@@ -523,18 +548,20 @@
   <div class="grid-2" style="margin-bottom:28px;">
     <div class="card" style="margin-bottom:0;">
       <div class="card-title">🧭 Vektor Satuan <span class="chip">î, ĵ, k̂</span></div>
-      <div style="font-size:1.15rem; line-height:2.0;">
+      <div style="font-size:1.2rem; line-height:2.1;">
         <strong>î</strong> = arah sumbu X &nbsp;·&nbsp; <strong>ĵ</strong> = arah sumbu Y &nbsp;·&nbsp; <strong>k̂</strong> = arah sumbu Z<br>
-        <span style="background:#eaf1fd; padding:6px 28px; border-radius:60px; display:inline-block; margin-top:8px; font-weight:700; font-size:1.2rem;">
+        <span style="background:#e8effb; padding:8px 32px; border-radius:60px; display:inline-block; margin-top:8px; font-weight:800; font-size:1.3rem; border:2px solid #c8d8ea;">
           r = x·î + y·ĵ + z·k̂
         </span>
-        <p style="margin-top:12px; color:#1e293b; font-size:1rem;">
-          Contoh: titik (3, 4, 5) → <strong>r</strong> = 3î + 4ĵ + 5k̂
+        <p style="margin-top:14px; color:#0a1628; font-size:1.05rem;">
+          <strong>Contoh:</strong> titik (3, 4, 5) → <strong>r</strong> = 3î + 4ĵ + 5k̂
         </p>
       </div>
-      <div class="explanation" style="margin-top:12px;">
+      <div class="explanation" style="margin-top:14px;">
         <strong>Penjelasan:</strong> Vektor satuan adalah vektor yang panjangnya 1 dan hanya berfungsi menunjukkan arah.
         Dalam ruang 3D, setiap vektor dapat dinyatakan sebagai kombinasi linier dari î, ĵ, dan k̂.
+        <br><br>
+        <strong>Rumus vektor satuan:</strong> \(\hat{A} = \frac{\vec{A}}{|\vec{A}|}\)
       </div>
     </div>
     <div class="card" style="margin-bottom:0;">
@@ -551,7 +578,7 @@
         <span class="tag">🛰️ Antariksa</span>
         <span class="tag">🏎️ Otomotif</span>
       </div>
-      <p style="margin-top:14px; color:#1e293b; font-size:1rem; line-height:1.6;">
+      <p style="margin-top:16px; color:#0a1628; font-size:1.05rem; line-height:1.7;">
         <strong>Vektor</strong> adalah bahasa insinyur dan ilmuwan untuk menggambarkan arah, gaya, kecepatan, dan medan.
         Dari desain pesawat hingga animasi 3D, vektor ada di mana-mana.
       </p>
@@ -561,7 +588,7 @@
   <!-- ============================================================ -->
   <!-- 6. REFERENSI -->
   <!-- ============================================================ -->
-  <div class="card" style="background:#f6faff;">
+  <div class="card" style="background:#f2f7fe;">
     <div class="card-title">📚 Sumber Referensi <span class="chip">kredibel</span></div>
     <div class="ref-list">
       <span class="ref-item">Halliday, D., Resnick, R., & Walker, J. (2014). <em>Fundamentals of Physics</em>. Wiley.</span>
@@ -569,36 +596,80 @@
       <span class="ref-item">Kanginan, M. (2016). <em>Fisika untuk SMA/MA Kelas XI</em>. Erlangga.</span>
       <span class="ref-item">Young, H. D. & Freedman, R. A. (2016). <em>University Physics</em>. Pearson.</span>
     </div>
-    <p style="margin-top:10px; font-size:0.9rem; color:#475569;">
+    <p style="margin-top:10px; font-size:0.9rem; color:#2c3e5c;">
       Materi ini mengacu pada kurikulum fisika SMA dan buku-buku fisika dasar yang digunakan di perguruan tinggi.
     </p>
   </div>
 
   <!-- ============================================================ -->
-  <!-- 7. SOAL LATIHAN -->
+  <!-- 7. SOAL LATIHAN + JAWABAN -->
   <!-- ============================================================ -->
   <div class="card">
     <div class="card-title">📝 Soal Latihan <span class="chip">cek jawaban</span></div>
 
     <div class="soal-item">
-      <p><strong>1.</strong> Partikel bergerak dari P(2, 4) ke Q(6, 3). Hitung besar perpindahan Δr (2 desimal).</p>
+      <p><strong>1.</strong> Partikel dari P(2, 4) ke Q(6, 3). Hitung besar perpindahan Δr (2 desimal).</p>
       <input type="text" id="jawab1" placeholder="misal 4.12" />
       <button class="btn-cek" onclick="cekJawaban(1, 4.12)">Cek</button>
       <div id="fb1" class="feedback"></div>
     </div>
 
     <div class="soal-item">
-      <p><strong>2.</strong> Vektor gaya F = 5 N membentuk sudut 35° terhadap sumbu X+. Berapa F<sub>x</sub>? (2 desimal)</p>
+      <p><strong>2.</strong> Vektor gaya F = 5 N, sudut 35° terhadap sumbu X+. Berapa F<sub>x</sub>? (2 desimal)</p>
       <input type="text" id="jawab2" placeholder="misal 4.10" />
       <button class="btn-cek" onclick="cekJawaban(2, 4.10)">Cek</button>
       <div id="fb2" class="feedback"></div>
     </div>
 
     <div class="soal-item">
-      <p><strong>3.</strong> Dua vektor F₁ = 4, F₂ = 3 dengan α = 50°. Hitung resultan R (2 desimal).</p>
+      <p><strong>3.</strong> F₁ = 4, F₂ = 3, α = 50°. Hitung resultan R (2 desimal).</p>
       <input type="text" id="jawab3" placeholder="misal 6.34" />
       <button class="btn-cek" onclick="cekJawaban(3, 6.34)">Cek</button>
       <div id="fb3" class="feedback"></div>
+    </div>
+
+    <!-- Jawaban soal latihan (ditampilkan) -->
+    <div class="jawaban-box">
+      <strong>📌 Jawaban Soal Latihan:</strong><br>
+      <strong>1.</strong> P(2,4) → Q(6,3): Δr = 4î − 1ĵ → |Δr| = √(4² + (−1)²) = √17 ≈ <strong>4,12</strong> satuan, arah = −14,0° terhadap sumbu X+<br>
+      <strong>2.</strong> F = 5 N, α = 35°: F<sub>x</sub> = 5·cos 35° ≈ <strong>4,10</strong> N<br>
+      <strong>3.</strong> F₁ = 4, F₂ = 3, α = 50°: R = √(4² + 3² + 2·4·3·cos 50°) ≈ <strong>6,34</strong> satuan
+    </div>
+  </div>
+
+  <!-- ============================================================ -->
+  <!-- 8. SOAL GRAFIK MOBIL (dari PPT) -->
+  <!-- ============================================================ -->
+  <div class="card" style="background:#f8faff;">
+    <div class="card-title">📊 Soal Grafik Posisi Mobil <span class="chip">GLB</span></div>
+    <p style="font-size:1.05rem; margin-bottom:12px; font-weight:500;">
+      Grafik posisi (x) terhadap waktu (t) dengan data: <strong>(0, 28), (5, 8), (8, −4)</strong>
+    </p>
+    <div style="display:grid; grid-template-columns:1fr 1fr; gap:12px; font-size:1.0rem; line-height:1.9;">
+      <div style="background:#e8effb; padding:14px 20px; border-radius:16px;">
+        <strong>A. Persamaan posisi</strong><br>
+        \(x(t) = 28 - 4t\)
+      </div>
+      <div style="background:#e8effb; padding:14px 20px; border-radius:16px;">
+        <strong>B. Titik acuan (x=0)</strong><br>
+        \(t = 7\) s
+      </div>
+      <div style="background:#e8effb; padding:14px 20px; border-radius:16px;">
+        <strong>C. Jarak 0–8 s</strong><br>
+        32 m
+      </div>
+      <div style="background:#e8effb; padding:14px 20px; border-radius:16px;">
+        <strong>D. Perpindahan 0–8 s</strong><br>
+        Δx = −32 m
+      </div>
+      <div style="background:#e8effb; padding:14px 20px; border-radius:16px; grid-column: span 2;">
+        <strong>E. Kecepatan rata-rata t=5 s – t=8 s</strong><br>
+        \(\bar{v} = \frac{-4 - 8}{8 - 5} = -4\) m/s
+      </div>
+    </div>
+    <div class="explanation" style="margin-top:12px;">
+      <strong>Penjelasan:</strong> Dari data, terlihat bahwa grafik berupa garis lurus (GLB) dengan kecepatan tetap −4 m/s.
+      Persamaan posisi \(x(t) = 28 - 4t\). Titik acuan (x=0) dicapai saat t = 7 s.
     </div>
   </div>
 
@@ -622,23 +693,21 @@
     const len = Math.sqrt(dx * dx + dy * dy);
     if (len < 1.5) return;
     const angle = Math.atan2(dy, dx);
-    const headLen = Math.min(16, len * 0.22);
-    const headAngle = 0.50;
+    const headLen = Math.min(18, len * 0.24);
+    const headAngle = 0.52;
 
     ctx.save();
     ctx.strokeStyle = color;
     ctx.fillStyle = color;
-    ctx.lineWidth = lineWidth || 3.0;
+    ctx.lineWidth = lineWidth || 3.5;
     ctx.lineCap = 'round';
     ctx.lineJoin = 'round';
 
-    // garis
     ctx.beginPath();
     ctx.moveTo(fromX, fromY);
     ctx.lineTo(toX, toY);
     ctx.stroke();
 
-    // kepala panah (lebih tegas)
     ctx.beginPath();
     ctx.moveTo(toX, toY);
     ctx.lineTo(toX - headLen * Math.cos(angle - headAngle), toY - headLen * Math.sin(angle - headAngle));
@@ -668,57 +737,57 @@
     valF.textContent = F.toFixed(1);
 
     const w = cvUrai.width, h = cvUrai.height;
-    const cx = 150, cy = 245, scale = 30;
+    const cx = 160, cy = 255, scale = 32;
     ctxU.clearRect(0, 0, w, h);
 
     // sumbu
-    ctxU.strokeStyle = '#b3c6d9';
+    ctxU.strokeStyle = '#b8cce0';
     ctxU.lineWidth = 1.5;
-    ctxU.font = '14px Inter, sans-serif';
-    ctxU.fillStyle = '#475569';
+    ctxU.font = '15px Inter, sans-serif';
+    ctxU.fillStyle = '#2c3e5c';
     ctxU.beginPath(); ctxU.moveTo(40, cy); ctxU.lineTo(w-30, cy); ctxU.stroke();
     ctxU.beginPath(); ctxU.moveTo(cx, h-30); ctxU.lineTo(cx, 30); ctxU.stroke();
-    ctxU.fillText('x', w-30, cy-10);
-    ctxU.fillText('y', cx+12, 28);
+    ctxU.fillText('x', w-32, cy-10);
+    ctxU.fillText('y', cx+14, 28);
 
     // vektor F
     const fx = F * Math.cos(rad) * scale;
     const fy = -F * Math.sin(rad) * scale;
-    drawArrow(ctxU, cx, cy, cx+fx, cy+fy, '#2563eb', 3.5);
+    drawArrow(ctxU, cx, cy, cx+fx, cy+fy, '#1a3a6b', 4);
 
-    // komponen Fx (merah)
+    // komponen Fx
     ctxU.strokeStyle = '#dc2626';
     ctxU.lineWidth = 2.5;
     ctxU.setLineDash([6, 6]);
     ctxU.beginPath(); ctxU.moveTo(cx, cy); ctxU.lineTo(cx+fx, cy); ctxU.stroke();
     ctxU.setLineDash([]);
     ctxU.fillStyle = '#dc2626';
-    ctxU.font = 'bold 13px Inter, sans-serif';
-    ctxU.fillText('Fₓ = ' + (F*Math.cos(rad)).toFixed(2), cx+fx/2-26, cy+30);
+    ctxU.font = 'bold 14px Inter, sans-serif';
+    ctxU.fillText('Fₓ = ' + (F*Math.cos(rad)).toFixed(2), cx+fx/2-30, cy+32);
 
-    // komponen Fy (hijau)
+    // komponen Fy
     ctxU.strokeStyle = '#16a34a';
     ctxU.lineWidth = 2.5;
     ctxU.setLineDash([6, 6]);
     ctxU.beginPath(); ctxU.moveTo(cx+fx, cy); ctxU.lineTo(cx+fx, cy+fy); ctxU.stroke();
     ctxU.setLineDash([]);
     ctxU.fillStyle = '#16a34a';
-    ctxU.font = 'bold 13px Inter, sans-serif';
-    ctxU.fillText('Fᵧ = ' + (F*Math.sin(rad)).toFixed(2), cx+fx+12, (cy+cy+fy)/2+4);
+    ctxU.font = 'bold 14px Inter, sans-serif';
+    ctxU.fillText('Fᵧ = ' + (F*Math.sin(rad)).toFixed(2), cx+fx+14, (cy+cy+fy)/2+6);
 
     // label F
-    ctxU.fillStyle = '#1e40af';
-    ctxU.font = 'bold 15px Inter, sans-serif';
-    ctxU.fillText('F = ' + F.toFixed(1), cx+fx/2-16, cy+fy/2-16);
+    ctxU.fillStyle = '#0a1628';
+    ctxU.font = 'bold 16px Inter, sans-serif';
+    ctxU.fillText('F = ' + F.toFixed(1), cx+fx/2-18, cy+fy/2-18);
 
     // sudut
-    ctxU.strokeStyle = '#f59e0b';
-    ctxU.lineWidth = 2;
-    ctxU.beginPath(); ctxU.arc(cx, cy, 36, -rad, 0);
+    ctxU.strokeStyle = '#c9a84c';
+    ctxU.lineWidth = 2.5;
+    ctxU.beginPath(); ctxU.arc(cx, cy, 40, -rad, 0);
     ctxU.stroke();
-    ctxU.fillStyle = '#b45309';
-    ctxU.font = '13px Inter, sans-serif';
-    ctxU.fillText('α=' + deg + '°', cx+24, cy-20);
+    ctxU.fillStyle = '#8a6d2a';
+    ctxU.font = '14px Inter, sans-serif';
+    ctxU.fillText('α=' + deg + '°', cx+28, cy-24);
 
     const Fx = F * Math.cos(rad);
     const Fy = F * Math.sin(rad);
@@ -751,67 +820,66 @@
 
     const rad = alpha * Math.PI / 180;
     const w = cvJumlah.width, h = cvJumlah.height;
-    const cx = 150, cy = 225, scale = 28;
+    const cx = 160, cy = 235, scale = 30;
     ctxJ.clearRect(0, 0, w, h);
 
     // sumbu
-    ctxJ.strokeStyle = '#b3c6d9';
+    ctxJ.strokeStyle = '#b8cce0';
     ctxJ.lineWidth = 1.5;
-    ctxJ.font = '14px Inter, sans-serif';
-    ctxJ.fillStyle = '#475569';
+    ctxJ.font = '15px Inter, sans-serif';
+    ctxJ.fillStyle = '#2c3e5c';
     ctxJ.beginPath(); ctxJ.moveTo(40, cy); ctxJ.lineTo(w-30, cy); ctxJ.stroke();
     ctxJ.beginPath(); ctxJ.moveTo(cx, h-30); ctxJ.lineTo(cx, 30); ctxJ.stroke();
-    ctxJ.fillText('x', w-30, cy-10);
-    ctxJ.fillText('y', cx+12, 28);
+    ctxJ.fillText('x', w-32, cy-10);
+    ctxJ.fillText('y', cx+14, 28);
 
     // F1
     const x1 = F1 * scale;
-    drawArrow(ctxJ, cx, cy, cx+x1, cy, '#2563eb', 3.5);
-    ctxJ.fillStyle = '#1e40af';
-    ctxJ.font = 'bold 14px Inter, sans-serif';
-    ctxJ.fillText('F₁', cx+x1/2-14, cy-16);
+    drawArrow(ctxJ, cx, cy, cx+x1, cy, '#1a3a6b', 4);
+    ctxJ.fillStyle = '#0a1628';
+    ctxJ.font = 'bold 15px Inter, sans-serif';
+    ctxJ.fillText('F₁', cx+x1/2-16, cy-18);
 
     // F2
     const x2 = F2 * Math.cos(rad) * scale;
     const y2 = -F2 * Math.sin(rad) * scale;
-    drawArrow(ctxJ, cx+x1, cy, cx+x1+x2, cy+y2, '#7c3aed', 3.5);
+    drawArrow(ctxJ, cx+x1, cy, cx+x1+x2, cy+y2, '#7c3aed', 4);
     ctxJ.fillStyle = '#5b21b6';
-    ctxJ.font = 'bold 14px Inter, sans-serif';
-    ctxJ.fillText('F₂', cx+x1+x2/2-16, cy+y2/2-16);
+    ctxJ.font = 'bold 15px Inter, sans-serif';
+    ctxJ.fillText('F₂', cx+x1+x2/2-18, cy+y2/2-18);
 
     // Resultan
     const Rx = x1 + x2;
     const Ry = y2;
     ctxJ.strokeStyle = '#dc2626';
-    ctxJ.lineWidth = 3.5;
+    ctxJ.lineWidth = 4;
     ctxJ.setLineDash([8, 6]);
     ctxJ.beginPath(); ctxJ.moveTo(cx, cy); ctxJ.lineTo(cx+Rx, cy+Ry); ctxJ.stroke();
     ctxJ.setLineDash([]);
 
-    // panah resultan (kepala besar)
     const rLen = Math.sqrt(Rx*Rx + Ry*Ry);
     if (rLen > 5) {
       const angR = Math.atan2(Ry, Rx);
-      const hl = Math.min(16, rLen * 0.20);
+      const hl = Math.min(18, rLen * 0.22);
       ctxJ.fillStyle = '#dc2626';
       ctxJ.beginPath();
       ctxJ.moveTo(cx+Rx, cy+Ry);
-      ctxJ.lineTo(cx+Rx - hl*Math.cos(angR-0.50), cy+Ry - hl*Math.sin(angR-0.50));
-      ctxJ.lineTo(cx+Rx - hl*Math.cos(angR+0.50), cy+Ry - hl*Math.sin(angR+0.50));
+      ctxJ.lineTo(cx+Rx - hl*Math.cos(angR-0.52), cy+Ry - hl*Math.sin(angR-0.52));
+      ctxJ.lineTo(cx+Rx - hl*Math.cos(angR+0.52), cy+Ry - hl*Math.sin(angR+0.52));
       ctxJ.fill();
     }
     ctxJ.fillStyle = '#b91c1c';
-    ctxJ.font = 'bold 15px Inter, sans-serif';
-    ctxJ.fillText('R', cx+Rx/2-14, cy+Ry/2-22);
+    ctxJ.font = 'bold 16px Inter, sans-serif';
+    ctxJ.fillText('R', cx+Rx/2-16, cy+Ry/2-24);
 
     // sudut α
-    ctxJ.strokeStyle = '#f59e0b';
-    ctxJ.lineWidth = 2;
-    ctxJ.beginPath(); ctxJ.arc(cx+x1, cy, 32, -rad, 0);
+    ctxJ.strokeStyle = '#c9a84c';
+    ctxJ.lineWidth = 2.5;
+    ctxJ.beginPath(); ctxJ.arc(cx+x1, cy, 36, -rad, 0);
     ctxJ.stroke();
-    ctxJ.fillStyle = '#b45309';
-    ctxJ.font = '13px Inter, sans-serif';
-    ctxJ.fillText('α=' + alpha + '°', cx+x1+20, cy-22);
+    ctxJ.fillStyle = '#8a6d2a';
+    ctxJ.font = '14px Inter, sans-serif';
+    ctxJ.fillText('α=' + alpha + '°', cx+x1+24, cy-24);
 
     const R = Math.sqrt(F1*F1 + F2*F2 + 2*F1*F2*Math.cos(rad));
     const theta = Math.atan2(F2*Math.sin(rad), F1 + F2*Math.cos(rad));
@@ -845,60 +913,59 @@
     valQx.textContent = qx.toFixed(1); valQy.textContent = qy.toFixed(1);
 
     const w = cvPosisi.width, h = cvPosisi.height;
-    const margin = 55, scale = 30;
+    const margin = 55, scale = 32;
     const cx = margin, cy = h - margin;
     ctxP.clearRect(0, 0, w, h);
 
     // sumbu
-    ctxP.strokeStyle = '#b3c6d9';
+    ctxP.strokeStyle = '#b8cce0';
     ctxP.lineWidth = 1.5;
-    ctxP.font = '14px Inter, sans-serif';
-    ctxP.fillStyle = '#475569';
+    ctxP.font = '15px Inter, sans-serif';
+    ctxP.fillStyle = '#2c3e5c';
     ctxP.beginPath(); ctxP.moveTo(20, cy); ctxP.lineTo(w-20, cy); ctxP.stroke();
     ctxP.beginPath(); ctxP.moveTo(cx, h-20); ctxP.lineTo(cx, 20); ctxP.stroke();
-    ctxP.fillText('x', w-28, cy-10);
-    ctxP.fillText('y', cx+12, 28);
+    ctxP.fillText('x', w-30, cy-10);
+    ctxP.fillText('y', cx+14, 28);
 
     const px_ = cx + px*scale, py_ = cy - py*scale;
     const qx_ = cx + qx*scale, qy_ = cy - qy*scale;
 
     // titik P
-    ctxP.fillStyle = '#2563eb';
-    ctxP.beginPath(); ctxP.arc(px_, py_, 8, 0, 2*Math.PI); ctxP.fill();
-    ctxP.fillStyle = '#0b1a33';
-    ctxP.font = 'bold 13px Inter, sans-serif';
-    ctxP.fillText('P(' + px + ',' + py + ')', px_-20, py_-16);
+    ctxP.fillStyle = '#1a3a6b';
+    ctxP.beginPath(); ctxP.arc(px_, py_, 9, 0, 2*Math.PI); ctxP.fill();
+    ctxP.fillStyle = '#0a1628';
+    ctxP.font = 'bold 14px Inter, sans-serif';
+    ctxP.fillText('P(' + px + ',' + py + ')', px_-22, py_-18);
 
     // titik Q
     ctxP.fillStyle = '#16a34a';
-    ctxP.beginPath(); ctxP.arc(qx_, qy_, 8, 0, 2*Math.PI); ctxP.fill();
-    ctxP.fillStyle = '#0b1a33';
-    ctxP.font = 'bold 13px Inter, sans-serif';
-    ctxP.fillText('Q(' + qx + ',' + qy + ')', qx_-20, qy_-16);
+    ctxP.beginPath(); ctxP.arc(qx_, qy_, 9, 0, 2*Math.PI); ctxP.fill();
+    ctxP.fillStyle = '#0a1628';
+    ctxP.font = 'bold 14px Inter, sans-serif';
+    ctxP.fillText('Q(' + qx + ',' + qy + ')', qx_-22, qy_-18);
 
     // vektor Δr
     const dx = qx_ - px_, dy = qy_ - py_;
     ctxP.strokeStyle = '#dc2626';
-    ctxP.lineWidth = 3.5;
-    ctxP.setLineDash([7, 6]);
+    ctxP.lineWidth = 4;
+    ctxP.setLineDash([8, 6]);
     ctxP.beginPath(); ctxP.moveTo(px_, py_); ctxP.lineTo(qx_, qy_); ctxP.stroke();
     ctxP.setLineDash([]);
 
-    // panah Δr (kepala besar)
     const len = Math.sqrt(dx*dx + dy*dy);
     if (len > 4) {
       const ang = Math.atan2(dy, dx);
-      const hl = Math.min(16, len * 0.20);
+      const hl = Math.min(18, len * 0.22);
       ctxP.fillStyle = '#dc2626';
       ctxP.beginPath();
       ctxP.moveTo(qx_, qy_);
-      ctxP.lineTo(qx_ - hl*Math.cos(ang-0.50), qy_ - hl*Math.sin(ang-0.50));
-      ctxP.lineTo(qx_ - hl*Math.cos(ang+0.50), qy_ - hl*Math.sin(ang+0.50));
+      ctxP.lineTo(qx_ - hl*Math.cos(ang-0.52), qy_ - hl*Math.sin(ang-0.52));
+      ctxP.lineTo(qx_ - hl*Math.cos(ang+0.52), qy_ - hl*Math.sin(ang+0.52));
       ctxP.fill();
     }
     ctxP.fillStyle = '#b91c1c';
-    ctxP.font = 'bold 14px Inter, sans-serif';
-    ctxP.fillText('Δr', (px_+qx_)/2-16, (py_+qy_)/2-18);
+    ctxP.font = 'bold 15px Inter, sans-serif';
+    ctxP.fillText('Δr', (px_+qx_)/2-18, (py_+qy_)/2-20);
 
     const dr = Math.sqrt((qx-px)*(qx-px) + (qy-py)*(qy-py));
     const angle = Math.atan2(qy-py, qx-px) * 180 / Math.PI;
