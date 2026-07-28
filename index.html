@@ -8,21 +8,21 @@
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
-      background: #e8edf6;
+      background: #eef3f9;
       font-family: 'Inter', 'Segoe UI', system-ui, sans-serif;
-      padding: 32px 48px;
+      padding: 28px 40px;
       color: #0a1628;
       display: flex;
       justify-content: center;
       min-height: 100vh;
     }
     .container {
-      max-width: 1520px;
+      max-width: 1500px;
       width: 100%;
       background: #ffffff;
-      border-radius: 48px;
-      padding: 40px 50px 32px;
-      box-shadow: 0 30px 70px rgba(10, 22, 40, 0.12);
+      border-radius: 44px;
+      padding: 38px 46px 30px;
+      box-shadow: 0 30px 70px rgba(10, 22, 40, 0.10);
       border: 1px solid rgba(255,255,255,0.5);
     }
     .header {
@@ -30,108 +30,106 @@
       justify-content: space-between;
       align-items: flex-end;
       flex-wrap: wrap;
-      padding-bottom: 22px;
-      margin-bottom: 34px;
+      padding-bottom: 18px;
+      margin-bottom: 30px;
       border-bottom: 4px solid #1a3a6b;
     }
     .header-left h1 {
-      font-size: 3.0rem;
+      font-size: 2.8rem;
       font-weight: 900;
       letter-spacing: -0.03em;
       color: #0a1628;
     }
     .header-left h1 span { color: #1a3a6b; }
     .header-left .sub {
-      font-size: 1.2rem;
+      font-size: 1.1rem;
       font-weight: 500;
       color: #2c3e5c;
-      margin-top: 4px;
+      margin-top: 2px;
     }
     .header-right {
       display: flex;
-      gap: 16px;
+      gap: 14px;
       align-items: center;
       flex-wrap: wrap;
     }
     .header-right .badge-school {
       background: #0a1628;
       color: #f0f4fc;
-      padding: 8px 32px;
+      padding: 6px 28px;
       border-radius: 60px;
-      font-size: 0.95rem;
+      font-size: 0.9rem;
       font-weight: 700;
     }
     .header-right .badge-inter {
       background: #c9a84c;
       color: #0a1628;
-      padding: 8px 28px;
+      padding: 6px 24px;
       border-radius: 60px;
-      font-size: 0.85rem;
+      font-size: 0.8rem;
       font-weight: 800;
       text-transform: uppercase;
-      letter-spacing: 0.8px;
+      letter-spacing: 0.6px;
     }
     .card {
       background: #f8faff;
-      border-radius: 28px;
-      padding: 28px 32px 32px;
-      margin-bottom: 28px;
+      border-radius: 26px;
+      padding: 24px 28px 28px;
+      margin-bottom: 24px;
       border: 1px solid #e2eaf5;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.02);
-      transition: border 0.2s;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.02);
     }
     .card:hover { border-color: #b8cce0; }
     .card-title {
-      font-size: 1.7rem;
+      font-size: 1.5rem;
       font-weight: 800;
       color: #0a1628;
       display: flex;
       align-items: center;
-      gap: 16px;
-      margin-bottom: 20px;
+      gap: 14px;
+      margin-bottom: 16px;
     }
     .card-title .chip {
       background: #dce6f5;
       color: #1a3a6b;
-      font-size: 0.8rem;
+      font-size: 0.75rem;
       font-weight: 700;
-      padding: 4px 20px;
+      padding: 3px 18px;
       border-radius: 60px;
     }
-    .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 34px; }
-    .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+    .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; }
+    .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
     .canvas-wrap {
       background: #ffffff;
-      border-radius: 22px;
+      border-radius: 20px;
       border: 1px solid #dce6f2;
-      padding: 6px;
-      box-shadow: inset 0 2px 6px rgba(0,0,0,0.02);
+      padding: 5px;
     }
     .canvas-wrap canvas {
       display: block;
       width: 100%;
       height: auto;
       aspect-ratio: 16 / 10;
-      border-radius: 18px;
+      border-radius: 16px;
       background: #ffffff;
     }
     .slider-group {
       display: flex;
       flex-wrap: wrap;
-      gap: 10px 30px;
+      gap: 8px 24px;
       align-items: center;
-      margin: 12px 0 4px;
+      margin: 10px 0 2px;
     }
     .slider-group label {
       display: flex;
       align-items: center;
-      gap: 10px;
+      gap: 8px;
       font-weight: 700;
-      font-size: 0.95rem;
+      font-size: 0.9rem;
       color: #0a1628;
     }
     .slider-group input[type="range"] {
-      width: 140px;
+      width: 130px;
       height: 5px;
       -webkit-appearance: none;
       appearance: none;
@@ -142,75 +140,77 @@
     .slider-group input[type="range"]::-webkit-slider-thumb {
       -webkit-appearance: none;
       appearance: none;
-      width: 20px;
-      height: 20px;
+      width: 18px;
+      height: 18px;
       background: #1a3a6b;
       border-radius: 50%;
       border: 3px solid white;
-      box-shadow: 0 2px 10px rgba(26,58,107,0.3);
+      box-shadow: 0 2px 8px rgba(26,58,107,0.3);
       cursor: pointer;
     }
     .slider-group input[type="range"]::-moz-range-thumb {
-      width: 20px;
-      height: 20px;
+      width: 18px;
+      height: 18px;
       background: #1a3a6b;
       border-radius: 50%;
       border: 3px solid white;
-      box-shadow: 0 2px 10px rgba(26,58,107,0.3);
+      box-shadow: 0 2px 8px rgba(26,58,107,0.3);
       cursor: pointer;
     }
     .slider-group .val {
-      min-width: 46px;
+      min-width: 42px;
       font-weight: 800;
       color: #1a3a6b;
-      font-size: 1.05rem;
+      font-size: 1rem;
     }
     .result-box {
       background: #e8effb;
-      padding: 14px 24px;
-      border-radius: 18px;
-      font-size: 1.15rem;
-      margin-top: 12px;
-      border-left: 6px solid #1a3a6b;
+      padding: 12px 22px;
+      border-radius: 16px;
+      font-size: 1.1rem;
+      margin-top: 10px;
+      border-left: 5px solid #1a3a6b;
       color: #0a1628;
       font-weight: 600;
     }
     .result-box strong { color: #0a1628; font-weight: 800; }
     .formula-box {
       background: #e8effb;
-      padding: 18px 22px;
-      border-radius: 18px;
+      padding: 14px 20px;
+      border-radius: 16px;
       font-family: 'Inter', 'Courier New', monospace;
-      font-size: 1.35rem;
+      font-size: 1.25rem;
       text-align: center;
       border: 2px solid #c8d8ea;
-      margin: 10px 0;
+      margin: 8px 0;
       color: #0a1628;
       font-weight: 700;
     }
     .explanation {
       background: #f0f5fe;
-      padding: 18px 24px;
-      border-radius: 18px;
-      font-size: 1.0rem;
-      line-height: 1.8;
+      padding: 14px 20px;
+      border-radius: 16px;
+      font-size: 0.95rem;
+      line-height: 1.7;
       color: #0a1628;
-      margin-top: 10px;
-      border-left: 5px solid #c9a84c;
+      margin-top: 8px;
+      border-left: 4px solid #c9a84c;
     }
     .explanation strong { color: #0a1628; font-weight: 800; }
+
+    /* TABEL TRIGONOMETRI YANG BENAR */
     .table-trig {
       display: grid;
       grid-template-columns: repeat(5, 1fr);
-      gap: 4px;
-      font-size: 1.0rem;
-      max-width: 540px;
-      margin: 6px 0;
+      gap: 3px;
+      font-size: 0.95rem;
+      max-width: 500px;
+      margin: 4px 0;
     }
     .table-trig .cell {
       background: white;
-      padding: 8px 4px;
-      border-radius: 12px;
+      padding: 6px 4px;
+      border-radius: 10px;
       text-align: center;
       border: 1px solid #dce6f2;
       font-weight: 600;
@@ -220,17 +220,22 @@
       font-weight: 800;
       color: #0a1628;
     }
+    .table-trig .cell.benar {
+      background: #e6f0e6;
+      border-color: #88b888;
+    }
+
     .ref-list {
       display: flex;
       flex-wrap: wrap;
-      gap: 8px 28px;
-      font-size: 0.9rem;
+      gap: 6px 24px;
+      font-size: 0.85rem;
       color: #1a3a6b;
-      margin-top: 6px;
+      margin-top: 4px;
     }
     .ref-list .ref-item {
       background: #e8effb;
-      padding: 6px 20px;
+      padding: 4px 18px;
       border-radius: 40px;
       border: 1px solid #c8d8ea;
       font-weight: 500;
@@ -238,36 +243,36 @@
     .app-tags {
       display: flex;
       flex-wrap: wrap;
-      gap: 8px 16px;
-      margin: 6px 0;
+      gap: 6px 14px;
+      margin: 4px 0;
     }
     .app-tags .tag {
       background: #dce6f5;
-      padding: 6px 24px;
+      padding: 4px 20px;
       border-radius: 60px;
-      font-size: 0.9rem;
+      font-size: 0.85rem;
       font-weight: 700;
       color: #1a3a6b;
       border: 1px solid #b8cce0;
     }
     .soal-item {
       background: #f0f5fe;
-      border-radius: 20px;
-      padding: 18px 24px;
-      margin: 14px 0;
+      border-radius: 18px;
+      padding: 14px 20px;
+      margin: 12px 0;
       border: 1px solid #dce6f2;
     }
     .soal-item p {
-      font-size: 1.05rem;
+      font-size: 1rem;
       font-weight: 600;
-      margin-bottom: 8px;
+      margin-bottom: 6px;
     }
     .soal-item input {
       border: 2px solid #c8d8ea;
-      border-radius: 12px;
-      padding: 8px 18px;
-      width: 150px;
-      font-size: 1.0rem;
+      border-radius: 10px;
+      padding: 6px 16px;
+      width: 140px;
+      font-size: 0.95rem;
       font-weight: 600;
       background: white;
     }
@@ -279,55 +284,56 @@
       background: #1a3a6b;
       color: white;
       border: none;
-      padding: 8px 32px;
+      padding: 6px 28px;
       border-radius: 60px;
       font-weight: 800;
-      font-size: 0.95rem;
+      font-size: 0.9rem;
       cursor: pointer;
       transition: 0.15s;
-      margin-left: 10px;
+      margin-left: 8px;
     }
     .soal-item .btn-cek:hover {
       background: #0f2a4f;
       transform: scale(1.02);
     }
     .feedback {
-      margin-top: 8px;
+      margin-top: 6px;
       font-weight: 700;
-      font-size: 1.0rem;
+      font-size: 0.95rem;
     }
     .jawaban-box {
       background: #e8effb;
-      border-radius: 16px;
-      padding: 16px 22px;
-      margin-top: 16px;
+      border-radius: 14px;
+      padding: 14px 20px;
+      margin-top: 14px;
       border: 2px solid #c9a84c;
-      font-size: 0.95rem;
-      line-height: 1.8;
+      font-size: 0.9rem;
+      line-height: 1.7;
     }
     .jawaban-box strong { color: #0a1628; }
     .footer {
-      margin-top: 34px;
-      padding-top: 24px;
+      margin-top: 30px;
+      padding-top: 20px;
       border-top: 2px solid #dce6f2;
-      font-size: 0.95rem;
+      font-size: 0.9rem;
       color: #2c3e5c;
       text-align: center;
       display: flex;
       justify-content: center;
-      gap: 40px;
+      gap: 36px;
       flex-wrap: wrap;
     }
     .footer strong { color: #0a1628; }
-    @media (max-width: 1150px) {
+
+    @media (max-width: 1100px) {
       .grid-2 { grid-template-columns: 1fr; }
       .grid-3 { grid-template-columns: 1fr 1fr; }
-      body { padding: 20px; }
-      .container { padding: 24px; }
+      body { padding: 16px; }
+      .container { padding: 20px; }
     }
-    @media (max-width: 700px) {
+    @media (max-width: 680px) {
       .grid-3 { grid-template-columns: 1fr; }
-      .header-left h1 { font-size: 2.0rem; }
+      .header-left h1 { font-size: 1.8rem; }
       .header-right { flex-wrap: wrap; }
     }
   </style>
@@ -348,34 +354,67 @@
     </div>
   </div>
 
-  <!-- TRIGONOMETRI -->
+  <!-- ============================================================ -->
+  <!-- 1. TRIGONOMETRI DASAR (TABEL DIPERBAIKI) -->
+  <!-- ============================================================ -->
   <div class="card">
-    <div class="card-title">📐 Trigonometri Dasar <span class="chip">pengulang</span></div>
-    <div style="display:flex; flex-wrap:wrap; gap:20px 50px; align-items:center;">
-      <div style="background:#e8effb; border-radius:20px; padding:14px 36px; font-size:1.4rem; border:2px solid #c8d8ea; font-weight:700;">
+    <div class="card-title">📐 Trigonometri Dasar <span class="chip">sudut istimewa</span></div>
+    <div style="display:flex; flex-wrap:wrap; gap:16px 40px; align-items:center;">
+      <div style="background:#e8effb; border-radius:18px; padding:12px 30px; font-size:1.3rem; border:2px solid #c8d8ea; font-weight:700;">
         sin β = AC / BC &nbsp;·&nbsp; cos β = AB / BC
       </div>
       <div class="table-trig">
-        <div class="cell head">α</div><div class="cell head">sin</div><div class="cell head">cos</div><div class="cell head">tan</div>
-        <div class="cell">0°</div><div class="cell">0</div><div class="cell">1</div><div class="cell">0</div>
-        <div class="cell">30°</div><div class="cell">½</div><div class="cell">½√3</div><div class="cell">1/√3</div>
-        <div class="cell">45°</div><div class="cell">½√2</div><div class="cell">½√2</div><div class="cell">1</div>
-        <div class="cell">60°</div><div class="cell">½√3</div><div class="cell">½</div><div class="cell">√3</div>
-        <div class="cell">90°</div><div class="cell">1</div><div class="cell">0</div><div class="cell">∞</div>
+        <div class="cell head">α</div>
+        <div class="cell head">sin α</div>
+        <div class="cell head">cos α</div>
+        <div class="cell head">tan α</div>
+        <div class="cell head">sudut</div>
+
+        <div class="cell">0°</div>
+        <div class="cell">0</div>
+        <div class="cell">1</div>
+        <div class="cell">0</div>
+        <div class="cell" style="background:#e6f0e6;">✓</div>
+
+        <div class="cell">30°</div>
+        <div class="cell">1/2</div>
+        <div class="cell">√3/2</div>
+        <div class="cell">1/√3</div>
+        <div class="cell" style="background:#e6f0e6;">✓</div>
+
+        <div class="cell">45°</div>
+        <div class="cell">√2/2</div>
+        <div class="cell">√2/2</div>
+        <div class="cell">1</div>
+        <div class="cell" style="background:#e6f0e6;">✓</div>
+
+        <div class="cell">60°</div>
+        <div class="cell">√3/2</div>
+        <div class="cell">1/2</div>
+        <div class="cell">√3</div>
+        <div class="cell" style="background:#e6f0e6;">✓</div>
+
+        <div class="cell">90°</div>
+        <div class="cell">1</div>
+        <div class="cell">0</div>
+        <div class="cell">∞</div>
+        <div class="cell" style="background:#e6f0e6;">✓</div>
       </div>
     </div>
     <div class="explanation">
-      <strong>Penjelasan:</strong> Dalam segitiga siku-siku ABC, <strong>sin β</strong> adalah perbandingan sisi depan (AC) dengan sisi miring (BC), sedangkan <strong>cos β</strong> adalah perbandingan sisi samping (AB) dengan sisi miring (BC). Nilai sudut istimewa wajib dihafal.
+      <strong>Penjelasan:</strong> Nilai-nilai sudut istimewa wajib dihafal. Perhatikan bahwa <strong>sin 30° = 1/2</strong>, <strong>cos 60° = 1/2</strong>, dan <strong>tan 45° = 1</strong>. Ini adalah dasar untuk menguraikan vektor.
     </div>
   </div>
 
-  <!-- SIMULASI 1: PENGURAIAN VEKTOR -->
+  <!-- ============================================================ -->
+  <!-- 2. SIMULASI 1: PENGURAIAN VEKTOR -->
+  <!-- ============================================================ -->
   <div class="card">
     <div class="card-title">📌 Simulasi 1 — Penguraian Vektor <span class="chip">F → F<sub>x</sub>, F<sub>y</sub></span></div>
     <div class="grid-2">
       <div>
         <div class="canvas-wrap">
-          <canvas id="canvasUrai" width="560" height="340"></canvas>
+          <canvas id="canvasUrai" width="550" height="330"></canvas>
         </div>
         <div class="slider-group">
           <label>sudut α <input type="range" id="sliderUrai" min="0" max="90" value="35" step="1">
@@ -394,20 +433,22 @@
           <strong>F<sub>x</sub></strong> (merah) pada sumbu X, <strong>F<sub>y</sub></strong> (hijau) pada sumbu Y.
           Geser sudut <strong>α</strong> dan besar <strong>F</strong>.
         </div>
-        <p style="margin-top:10px; font-size:0.9rem; color:#2c3e5c;">
+        <p style="margin-top:8px; font-size:0.9rem; color:#2c3e5c;">
           <strong>💡 Ingat:</strong> Komponen X pakai cos, komponen Y pakai sin.
         </p>
       </div>
     </div>
   </div>
 
-  <!-- SIMULASI 2: PENJUMLAHAN VEKTOR -->
+  <!-- ============================================================ -->
+  <!-- 3. SIMULASI 2: PENJUMLAHAN VEKTOR -->
+  <!-- ============================================================ -->
   <div class="card">
     <div class="card-title">➕ Simulasi 2 — Penjumlahan 2 Vektor <span class="chip">resultan R</span></div>
     <div class="grid-2">
       <div>
         <div class="canvas-wrap">
-          <canvas id="canvasJumlah" width="560" height="340"></canvas>
+          <canvas id="canvasJumlah" width="550" height="330"></canvas>
         </div>
         <div class="slider-group">
           <label>F₁ <input type="range" id="sliderF1" min="1" max="7" value="4" step="0.5">
@@ -427,20 +468,22 @@
           <strong>Penjelasan:</strong> F₁ (biru tua) dan F₂ (ungu) dengan sudut α.
           Resultan <strong>R</strong> (merah) adalah diagonal jajaran genjang.
         </div>
-        <p style="margin-top:10px; font-size:0.9rem; color:#2c3e5c;">
+        <p style="margin-top:8px; font-size:0.9rem; color:#2c3e5c;">
           <strong>💡 Kasus khusus:</strong> α = 0° → R = F₁ + F₂, α = 180° → R = |F₁ − F₂|.
         </p>
       </div>
     </div>
   </div>
 
-  <!-- SIMULASI 3: POSISI & PERPINDAHAN -->
+  <!-- ============================================================ -->
+  <!-- 4. SIMULASI 3: POSISI & PERPINDAHAN -->
+  <!-- ============================================================ -->
   <div class="card">
     <div class="card-title">📍 Simulasi 3 — Vektor Posisi &amp; Perpindahan <span class="chip">P → Q</span></div>
     <div class="grid-2">
       <div>
         <div class="canvas-wrap">
-          <canvas id="canvasPosisi" width="560" height="340"></canvas>
+          <canvas id="canvasPosisi" width="550" height="330"></canvas>
         </div>
         <div class="slider-group">
           <label>P<sub>x</sub> <input type="range" id="sliderPx" min="0" max="8" value="2" step="0.5">
@@ -462,27 +505,29 @@
           <strong>Penjelasan:</strong> P (biru tua) dan Q (hijau) adalah posisi partikel.
           Vektor perpindahan <strong>Δr</strong> (merah) = Q − P.
         </div>
-        <p style="margin-top:10px; font-size:0.9rem; color:#2c3e5c;">
+        <p style="margin-top:8px; font-size:0.9rem; color:#2c3e5c;">
           <strong>💡 Contoh:</strong> P(2,4), Q(6,3) → Δr = 4î − 1ĵ
         </p>
       </div>
     </div>
   </div>
 
-  <!-- VEKTOR SATUAN & APLIKASI -->
-  <div class="grid-2" style="margin-bottom:28px;">
+  <!-- ============================================================ -->
+  <!-- 5. VEKTOR SATUAN & APLIKASI -->
+  <!-- ============================================================ -->
+  <div class="grid-2" style="margin-bottom:24px;">
     <div class="card" style="margin-bottom:0;">
       <div class="card-title">🧭 Vektor Satuan <span class="chip">î, ĵ, k̂</span></div>
-      <div style="font-size:1.2rem; line-height:2.1;">
+      <div style="font-size:1.1rem; line-height:2.0;">
         <strong>î</strong> = arah sumbu X &nbsp;·&nbsp; <strong>ĵ</strong> = arah sumbu Y &nbsp;·&nbsp; <strong>k̂</strong> = arah sumbu Z<br>
-        <span style="background:#e8effb; padding:8px 32px; border-radius:60px; display:inline-block; margin-top:8px; font-weight:800; font-size:1.3rem; border:2px solid #c8d8ea;">
+        <span style="background:#e8effb; padding:6px 28px; border-radius:60px; display:inline-block; margin-top:6px; font-weight:800; font-size:1.2rem; border:2px solid #c8d8ea;">
           r = x·î + y·ĵ + z·k̂
         </span>
-        <p style="margin-top:14px; color:#0a1628; font-size:1.05rem;">
+        <p style="margin-top:10px; color:#0a1628; font-size:1rem;">
           <strong>Contoh:</strong> titik (3, 4, 5) → <strong>r</strong> = 3î + 4ĵ + 5k̂
         </p>
       </div>
-      <div class="explanation" style="margin-top:14px;">
+      <div class="explanation" style="margin-top:10px;">
         <strong>Penjelasan:</strong> Vektor satuan panjangnya 1, hanya menunjukkan arah.
         <strong>Rumus vektor satuan:</strong> \(\hat{A} = \frac{\vec{A}}{|\vec{A}|}\)
       </div>
@@ -501,13 +546,15 @@
         <span class="tag">🛰️ Antariksa</span>
         <span class="tag">🏎️ Otomotif</span>
       </div>
-      <p style="margin-top:16px; color:#0a1628; font-size:1.05rem; line-height:1.7;">
+      <p style="margin-top:12px; color:#0a1628; font-size:1rem; line-height:1.6;">
         <strong>Vektor</strong> adalah bahasa insinyur dan ilmuwan untuk menggambarkan arah, gaya, kecepatan, dan medan.
       </p>
     </div>
   </div>
 
-  <!-- REFERENSI -->
+  <!-- ============================================================ -->
+  <!-- 6. REFERENSI -->
+  <!-- ============================================================ -->
   <div class="card" style="background:#f2f7fe;">
     <div class="card-title">📚 Sumber Referensi <span class="chip">kredibel</span></div>
     <div class="ref-list">
@@ -518,7 +565,9 @@
     </div>
   </div>
 
-  <!-- SOAL LATIHAN + JAWABAN -->
+  <!-- ============================================================ -->
+  <!-- 7. SOAL LATIHAN + JAWABAN -->
+  <!-- ============================================================ -->
   <div class="card">
     <div class="card-title">📝 Soal Latihan <span class="chip">cek jawaban</span></div>
     <div class="soal-item">
@@ -547,35 +596,37 @@
     </div>
   </div>
 
-  <!-- SOAL GRAFIK MOBIL -->
+  <!-- ============================================================ -->
+  <!-- 8. SOAL GRAFIK MOBIL -->
+  <!-- ============================================================ -->
   <div class="card" style="background:#f8faff;">
     <div class="card-title">📊 Soal Grafik Posisi Mobil <span class="chip">GLB</span></div>
-    <p style="font-size:1.05rem; margin-bottom:12px; font-weight:500;">
+    <p style="font-size:1rem; margin-bottom:10px; font-weight:500;">
       Data: <strong>(0, 28), (5, 8), (8, −4)</strong>
     </p>
-    <div style="display:grid; grid-template-columns:1fr 1fr; gap:12px; font-size:1.0rem; line-height:1.9;">
-      <div style="background:#e8effb; padding:14px 20px; border-radius:16px;">
+    <div style="display:grid; grid-template-columns:1fr 1fr; gap:10px; font-size:0.95rem; line-height:1.8;">
+      <div style="background:#e8effb; padding:12px 18px; border-radius:14px;">
         <strong>A. Persamaan posisi</strong><br>
         \(x(t) = 28 - 4t\)
       </div>
-      <div style="background:#e8effb; padding:14px 20px; border-radius:16px;">
+      <div style="background:#e8effb; padding:12px 18px; border-radius:14px;">
         <strong>B. Titik acuan (x=0)</strong><br>
         \(t = 7\) s
       </div>
-      <div style="background:#e8effb; padding:14px 20px; border-radius:16px;">
+      <div style="background:#e8effb; padding:12px 18px; border-radius:14px;">
         <strong>C. Jarak 0–8 s</strong><br>
         32 m
       </div>
-      <div style="background:#e8effb; padding:14px 20px; border-radius:16px;">
+      <div style="background:#e8effb; padding:12px 18px; border-radius:14px;">
         <strong>D. Perpindahan 0–8 s</strong><br>
         Δx = −32 m
       </div>
-      <div style="background:#e8effb; padding:14px 20px; border-radius:16px; grid-column: span 2;">
+      <div style="background:#e8effb; padding:12px 18px; border-radius:14px; grid-column: span 2;">
         <strong>E. Kecepatan rata-rata t=5 s – t=8 s</strong><br>
         \(\bar{v} = \frac{-4 - 8}{8 - 5} = -4\) m/s
       </div>
     </div>
-    <div class="explanation" style="margin-top:12px;">
+    <div class="explanation" style="margin-top:10px;">
       <strong>Penjelasan:</strong> Grafik berupa garis lurus (GLB) dengan kecepatan tetap −4 m/s.
       Persamaan \(x(t) = 28 - 4t\). Titik acuan saat t = 7 s.
     </div>
@@ -609,7 +660,7 @@
     ctx.lineCap = 'round';
     ctx.lineJoin = 'round';
 
-    // GARIS UTUH (tidak putus-putus)
+    // GARIS UTUH — TIDAK PUTUS-PUTUS
     ctx.beginPath();
     ctx.moveTo(fromX, fromY);
     ctx.lineTo(toX, toY);
@@ -623,6 +674,21 @@
     ctx.closePath();
     ctx.fill();
 
+    ctx.restore();
+  }
+
+  // ============================================================
+  // FUNGSI GARIS BANTU (PUTUS-PUTUS) — HANYA UNTUK PROYEKSI
+  // ============================================================
+  function drawDashedLine(ctx, fromX, fromY, toX, toY, color, lineWidth) {
+    ctx.save();
+    ctx.strokeStyle = color;
+    ctx.lineWidth = lineWidth || 2;
+    ctx.setLineDash([5, 5]);
+    ctx.beginPath();
+    ctx.moveTo(fromX, fromY);
+    ctx.lineTo(toX, toY);
+    ctx.stroke();
     ctx.restore();
   }
 
@@ -645,57 +711,50 @@
     valF.textContent = F.toFixed(1);
 
     const w = cvUrai.width, h = cvUrai.height;
-    const cx = 160, cy = 255, scale = 32;
+    const cx = 155, cy = 248, scale = 30;
     ctxU.clearRect(0, 0, w, h);
 
     // Sumbu
     ctxU.strokeStyle = '#b8cce0';
     ctxU.lineWidth = 1.5;
-    ctxU.font = '15px Inter, sans-serif';
+    ctxU.font = '14px Inter, sans-serif';
     ctxU.fillStyle = '#2c3e5c';
     ctxU.beginPath(); ctxU.moveTo(40, cy); ctxU.lineTo(w-30, cy); ctxU.stroke();
     ctxU.beginPath(); ctxU.moveTo(cx, h-30); ctxU.lineTo(cx, 30); ctxU.stroke();
     ctxU.fillText('x', w-32, cy-10);
-    ctxU.fillText('y', cx+14, 28);
+    ctxU.fillText('y', cx+12, 28);
 
-    // Vektor F — GARIS UTUH
     const fx = F * Math.cos(rad) * scale;
     const fy = -F * Math.sin(rad) * scale;
+
+    // VEKTOR F — GARIS UTUH
     drawArrow(ctxU, cx, cy, cx+fx, cy+fy, '#1a3a6b', 4);
 
-    // Komponen Fx — GARIS PUTUS-PUTUS (karena ini GARIS BANTU)
-    ctxU.strokeStyle = '#dc2626';
-    ctxU.lineWidth = 2.5;
-    ctxU.setLineDash([6, 6]);
-    ctxU.beginPath(); ctxU.moveTo(cx, cy); ctxU.lineTo(cx+fx, cy); ctxU.stroke();
-    ctxU.setLineDash([]);
+    // GARIS BANTU Fx (PUTUS-PUTUS) — HANYA PROYEKSI
+    drawDashedLine(ctxU, cx, cy, cx+fx, cy, '#dc2626', 2.5);
     ctxU.fillStyle = '#dc2626';
-    ctxU.font = 'bold 14px Inter, sans-serif';
-    ctxU.fillText('Fₓ = ' + (F*Math.cos(rad)).toFixed(2), cx+fx/2-30, cy+32);
+    ctxU.font = 'bold 13px Inter, sans-serif';
+    ctxU.fillText('Fₓ = ' + (F*Math.cos(rad)).toFixed(2), cx+fx/2-28, cy+30);
 
-    // Komponen Fy — GARIS PUTUS-PUTUS (karena ini GARIS BANTU)
-    ctxU.strokeStyle = '#16a34a';
-    ctxU.lineWidth = 2.5;
-    ctxU.setLineDash([6, 6]);
-    ctxU.beginPath(); ctxU.moveTo(cx+fx, cy); ctxU.lineTo(cx+fx, cy+fy); ctxU.stroke();
-    ctxU.setLineDash([]);
+    // GARIS BANTU Fy (PUTUS-PUTUS) — HANYA PROYEKSI
+    drawDashedLine(ctxU, cx+fx, cy, cx+fx, cy+fy, '#16a34a', 2.5);
     ctxU.fillStyle = '#16a34a';
-    ctxU.font = 'bold 14px Inter, sans-serif';
-    ctxU.fillText('Fᵧ = ' + (F*Math.sin(rad)).toFixed(2), cx+fx+14, (cy+cy+fy)/2+6);
+    ctxU.font = 'bold 13px Inter, sans-serif';
+    ctxU.fillText('Fᵧ = ' + (F*Math.sin(rad)).toFixed(2), cx+fx+12, (cy+cy+fy)/2+4);
 
     // Label F
     ctxU.fillStyle = '#0a1628';
-    ctxU.font = 'bold 16px Inter, sans-serif';
-    ctxU.fillText('F = ' + F.toFixed(1), cx+fx/2-18, cy+fy/2-18);
+    ctxU.font = 'bold 15px Inter, sans-serif';
+    ctxU.fillText('F = ' + F.toFixed(1), cx+fx/2-16, cy+fy/2-16);
 
     // Sudut
     ctxU.strokeStyle = '#c9a84c';
     ctxU.lineWidth = 2.5;
-    ctxU.beginPath(); ctxU.arc(cx, cy, 40, -rad, 0);
+    ctxU.beginPath(); ctxU.arc(cx, cy, 36, -rad, 0);
     ctxU.stroke();
     ctxU.fillStyle = '#8a6d2a';
-    ctxU.font = '14px Inter, sans-serif';
-    ctxU.fillText('α=' + deg + '°', cx+28, cy-24);
+    ctxU.font = '13px Inter, sans-serif';
+    ctxU.fillText('α=' + deg + '°', cx+24, cy-22);
 
     const Fx = F * Math.cos(rad);
     const Fy = F * Math.sin(rad);
@@ -728,40 +787,39 @@
 
     const rad = alpha * Math.PI / 180;
     const w = cvJumlah.width, h = cvJumlah.height;
-    const cx = 160, cy = 235, scale = 30;
+    const cx = 155, cy = 228, scale = 28;
     ctxJ.clearRect(0, 0, w, h);
 
     // Sumbu
     ctxJ.strokeStyle = '#b8cce0';
     ctxJ.lineWidth = 1.5;
-    ctxJ.font = '15px Inter, sans-serif';
+    ctxJ.font = '14px Inter, sans-serif';
     ctxJ.fillStyle = '#2c3e5c';
     ctxJ.beginPath(); ctxJ.moveTo(40, cy); ctxJ.lineTo(w-30, cy); ctxJ.stroke();
     ctxJ.beginPath(); ctxJ.moveTo(cx, h-30); ctxJ.lineTo(cx, 30); ctxJ.stroke();
     ctxJ.fillText('x', w-32, cy-10);
-    ctxJ.fillText('y', cx+14, 28);
+    ctxJ.fillText('y', cx+12, 28);
 
     // F1 — GARIS UTUH
     const x1 = F1 * scale;
     drawArrow(ctxJ, cx, cy, cx+x1, cy, '#1a3a6b', 4);
     ctxJ.fillStyle = '#0a1628';
-    ctxJ.font = 'bold 15px Inter, sans-serif';
-    ctxJ.fillText('F₁', cx+x1/2-16, cy-18);
+    ctxJ.font = 'bold 14px Inter, sans-serif';
+    ctxJ.fillText('F₁', cx+x1/2-14, cy-16);
 
     // F2 — GARIS UTUH
     const x2 = F2 * Math.cos(rad) * scale;
     const y2 = -F2 * Math.sin(rad) * scale;
     drawArrow(ctxJ, cx+x1, cy, cx+x1+x2, cy+y2, '#7c3aed', 4);
     ctxJ.fillStyle = '#5b21b6';
-    ctxJ.font = 'bold 15px Inter, sans-serif';
-    ctxJ.fillText('F₂', cx+x1+x2/2-18, cy+y2/2-18);
+    ctxJ.font = 'bold 14px Inter, sans-serif';
+    ctxJ.fillText('F₂', cx+x1+x2/2-16, cy+y2/2-16);
 
     // Resultan R — GARIS UTUH (TIDAK PUTUS-PUTUS)
     const Rx = x1 + x2;
     const Ry = y2;
     ctxJ.strokeStyle = '#dc2626';
     ctxJ.lineWidth = 4;
-    // TIDAK ADA setLineDash — GARIS UTUH
     ctxJ.beginPath(); ctxJ.moveTo(cx, cy); ctxJ.lineTo(cx+Rx, cy+Ry); ctxJ.stroke();
 
     // Kepala panah resultan
@@ -777,17 +835,17 @@
       ctxJ.fill();
     }
     ctxJ.fillStyle = '#b91c1c';
-    ctxJ.font = 'bold 16px Inter, sans-serif';
-    ctxJ.fillText('R', cx+Rx/2-16, cy+Ry/2-24);
+    ctxJ.font = 'bold 15px Inter, sans-serif';
+    ctxJ.fillText('R', cx+Rx/2-14, cy+Ry/2-22);
 
     // Sudut α
     ctxJ.strokeStyle = '#c9a84c';
     ctxJ.lineWidth = 2.5;
-    ctxJ.beginPath(); ctxJ.arc(cx+x1, cy, 36, -rad, 0);
+    ctxJ.beginPath(); ctxJ.arc(cx+x1, cy, 32, -rad, 0);
     ctxJ.stroke();
     ctxJ.fillStyle = '#8a6d2a';
-    ctxJ.font = '14px Inter, sans-serif';
-    ctxJ.fillText('α=' + alpha + '°', cx+x1+24, cy-24);
+    ctxJ.font = '13px Inter, sans-serif';
+    ctxJ.fillText('α=' + alpha + '°', cx+x1+20, cy-22);
 
     const R = Math.sqrt(F1*F1 + F2*F2 + 2*F1*F2*Math.cos(rad));
     const theta = Math.atan2(F2*Math.sin(rad), F1 + F2*Math.cos(rad));
@@ -821,42 +879,41 @@
     valQx.textContent = qx.toFixed(1); valQy.textContent = qy.toFixed(1);
 
     const w = cvPosisi.width, h = cvPosisi.height;
-    const margin = 55, scale = 32;
+    const margin = 50, scale = 30;
     const cx = margin, cy = h - margin;
     ctxP.clearRect(0, 0, w, h);
 
     // Sumbu
     ctxP.strokeStyle = '#b8cce0';
     ctxP.lineWidth = 1.5;
-    ctxP.font = '15px Inter, sans-serif';
+    ctxP.font = '14px Inter, sans-serif';
     ctxP.fillStyle = '#2c3e5c';
     ctxP.beginPath(); ctxP.moveTo(20, cy); ctxP.lineTo(w-20, cy); ctxP.stroke();
     ctxP.beginPath(); ctxP.moveTo(cx, h-20); ctxP.lineTo(cx, 20); ctxP.stroke();
-    ctxP.fillText('x', w-30, cy-10);
-    ctxP.fillText('y', cx+14, 28);
+    ctxP.fillText('x', w-28, cy-10);
+    ctxP.fillText('y', cx+12, 28);
 
     const px_ = cx + px*scale, py_ = cy - py*scale;
     const qx_ = cx + qx*scale, qy_ = cy - qy*scale;
 
     // Titik P
     ctxP.fillStyle = '#1a3a6b';
-    ctxP.beginPath(); ctxP.arc(px_, py_, 9, 0, 2*Math.PI); ctxP.fill();
+    ctxP.beginPath(); ctxP.arc(px_, py_, 8, 0, 2*Math.PI); ctxP.fill();
     ctxP.fillStyle = '#0a1628';
-    ctxP.font = 'bold 14px Inter, sans-serif';
-    ctxP.fillText('P(' + px + ',' + py + ')', px_-22, py_-18);
+    ctxP.font = 'bold 13px Inter, sans-serif';
+    ctxP.fillText('P(' + px + ',' + py + ')', px_-20, py_-16);
 
     // Titik Q
     ctxP.fillStyle = '#16a34a';
-    ctxP.beginPath(); ctxP.arc(qx_, qy_, 9, 0, 2*Math.PI); ctxP.fill();
+    ctxP.beginPath(); ctxP.arc(qx_, qy_, 8, 0, 2*Math.PI); ctxP.fill();
     ctxP.fillStyle = '#0a1628';
-    ctxP.font = 'bold 14px Inter, sans-serif';
-    ctxP.fillText('Q(' + qx + ',' + qy + ')', qx_-22, qy_-18);
+    ctxP.font = 'bold 13px Inter, sans-serif';
+    ctxP.fillText('Q(' + qx + ',' + qy + ')', qx_-20, qy_-16);
 
-    // Vektor Δr — GARIS UTUH (TIDAK PUTUS-PUTUS)
+    // VEKTOR Δr — GARIS UTUH (TIDAK PUTUS-PUTUS)
     const dx = qx_ - px_, dy = qy_ - py_;
     ctxP.strokeStyle = '#dc2626';
     ctxP.lineWidth = 4;
-    // TIDAK ADA setLineDash — GARIS UTUH
     ctxP.beginPath(); ctxP.moveTo(px_, py_); ctxP.lineTo(qx_, qy_); ctxP.stroke();
 
     // Kepala panah Δr
@@ -872,8 +929,8 @@
       ctxP.fill();
     }
     ctxP.fillStyle = '#b91c1c';
-    ctxP.font = 'bold 15px Inter, sans-serif';
-    ctxP.fillText('Δr', (px_+qx_)/2-18, (py_+qy_)/2-20);
+    ctxP.font = 'bold 14px Inter, sans-serif';
+    ctxP.fillText('Δr', (px_+qx_)/2-16, (py_+qy_)/2-18);
 
     const dr = Math.sqrt((qx-px)*(qx-px) + (qy-py)*(qy-py));
     const angle = Math.atan2(qy-py, qx-px) * 180 / Math.PI;
