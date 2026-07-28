@@ -6,12 +6,7 @@
   <title>Kinematika Vektor | SMAK Kol. St. Yusup Malang</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700;14..32,800;14..32,900&display=swap" rel="stylesheet" />
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
+    * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
       background: #e8edf6;
       font-family: 'Inter', 'Segoe UI', system-ui, sans-serif;
@@ -21,18 +16,15 @@
       justify-content: center;
       min-height: 100vh;
     }
-
     .container {
       max-width: 1520px;
       width: 100%;
       background: #ffffff;
       border-radius: 48px;
       padding: 40px 50px 32px;
-      box-shadow: 0 30px 70px rgba(10, 22, 40, 0.12), 0 2px 8px rgba(0,0,0,0.03);
+      box-shadow: 0 30px 70px rgba(10, 22, 40, 0.12);
       border: 1px solid rgba(255,255,255,0.5);
     }
-
-    /* ---------- HEADER ---------- */
     .header {
       display: flex;
       justify-content: space-between;
@@ -42,16 +34,13 @@
       margin-bottom: 34px;
       border-bottom: 4px solid #1a3a6b;
     }
-
     .header-left h1 {
       font-size: 3.0rem;
       font-weight: 900;
       letter-spacing: -0.03em;
       color: #0a1628;
     }
-    .header-left h1 span {
-      color: #1a3a6b;
-    }
+    .header-left h1 span { color: #1a3a6b; }
     .header-left .sub {
       font-size: 1.2rem;
       font-weight: 500;
@@ -71,7 +60,6 @@
       border-radius: 60px;
       font-size: 0.95rem;
       font-weight: 700;
-      letter-spacing: 0.3px;
     }
     .header-right .badge-inter {
       background: #c9a84c;
@@ -83,8 +71,6 @@
       text-transform: uppercase;
       letter-spacing: 0.8px;
     }
-
-    /* ---------- CARDS ---------- */
     .card {
       background: #f8faff;
       border-radius: 28px;
@@ -94,10 +80,7 @@
       box-shadow: 0 2px 8px rgba(0,0,0,0.02);
       transition: border 0.2s;
     }
-    .card:hover {
-      border-color: #b8cce0;
-    }
-
+    .card:hover { border-color: #b8cce0; }
     .card-title {
       font-size: 1.7rem;
       font-weight: 800;
@@ -114,22 +97,9 @@
       font-weight: 700;
       padding: 4px 20px;
       border-radius: 60px;
-      letter-spacing: 0.3px;
     }
-
-    /* ---------- GRID ---------- */
-    .grid-2 {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 34px;
-    }
-    .grid-3 {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 24px;
-    }
-
-    /* ---------- CANVAS ---------- */
+    .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 34px; }
+    .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
     .canvas-wrap {
       background: #ffffff;
       border-radius: 22px;
@@ -145,8 +115,6 @@
       border-radius: 18px;
       background: #ffffff;
     }
-
-    /* ---------- SLIDER ---------- */
     .slider-group {
       display: flex;
       flex-wrap: wrap;
@@ -197,8 +165,6 @@
       color: #1a3a6b;
       font-size: 1.05rem;
     }
-
-    /* ---------- RESULT BOX ---------- */
     .result-box {
       background: #e8effb;
       padding: 14px 24px;
@@ -209,11 +175,7 @@
       color: #0a1628;
       font-weight: 600;
     }
-    .result-box strong {
-      color: #0a1628;
-      font-weight: 800;
-    }
-
+    .result-box strong { color: #0a1628; font-weight: 800; }
     .formula-box {
       background: #e8effb;
       padding: 18px 22px;
@@ -226,8 +188,6 @@
       color: #0a1628;
       font-weight: 700;
     }
-
-    /* ---------- PENJELASAN ---------- */
     .explanation {
       background: #f0f5fe;
       padding: 18px 24px;
@@ -238,12 +198,7 @@
       margin-top: 10px;
       border-left: 5px solid #c9a84c;
     }
-    .explanation strong {
-      color: #0a1628;
-      font-weight: 800;
-    }
-
-    /* ---------- TABEL TRIG ---------- */
+    .explanation strong { color: #0a1628; font-weight: 800; }
     .table-trig {
       display: grid;
       grid-template-columns: repeat(5, 1fr);
@@ -265,8 +220,6 @@
       font-weight: 800;
       color: #0a1628;
     }
-
-    /* ---------- REFERENSI ---------- */
     .ref-list {
       display: flex;
       flex-wrap: wrap;
@@ -282,8 +235,6 @@
       border: 1px solid #c8d8ea;
       font-weight: 500;
     }
-
-    /* ---------- APLIKASI ---------- */
     .app-tags {
       display: flex;
       flex-wrap: wrap;
@@ -299,8 +250,6 @@
       color: #1a3a6b;
       border: 1px solid #b8cce0;
     }
-
-    /* ---------- SOAL ---------- */
     .soal-item {
       background: #f0f5fe;
       border-radius: 20px;
@@ -347,8 +296,6 @@
       font-weight: 700;
       font-size: 1.0rem;
     }
-
-    /* ---------- JAWABAN SOAL (ditampilkan) ---------- */
     .jawaban-box {
       background: #e8effb;
       border-radius: 16px;
@@ -358,11 +305,7 @@
       font-size: 0.95rem;
       line-height: 1.8;
     }
-    .jawaban-box strong {
-      color: #0a1628;
-    }
-
-    /* ---------- FOOTER ---------- */
+    .jawaban-box strong { color: #0a1628; }
     .footer {
       margin-top: 34px;
       padding-top: 24px;
@@ -375,11 +318,7 @@
       gap: 40px;
       flex-wrap: wrap;
     }
-    .footer strong {
-      color: #0a1628;
-    }
-
-    /* ---------- RESPONSIVE ---------- */
+    .footer strong { color: #0a1628; }
     @media (max-width: 1150px) {
       .grid-2 { grid-template-columns: 1fr; }
       .grid-3 { grid-template-columns: 1fr 1fr; }
@@ -397,9 +336,7 @@
 
 <div class="container">
 
-  <!-- ============================================================ -->
   <!-- HEADER -->
-  <!-- ============================================================ -->
   <div class="header">
     <div class="header-left">
       <h1>Kinematika <span>Gerak 1</span> · Vektor</h1>
@@ -411,9 +348,7 @@
     </div>
   </div>
 
-  <!-- ============================================================ -->
-  <!-- 1. TRIGONOMETRI DASAR -->
-  <!-- ============================================================ -->
+  <!-- TRIGONOMETRI -->
   <div class="card">
     <div class="card-title">📐 Trigonometri Dasar <span class="chip">pengulang</span></div>
     <div style="display:flex; flex-wrap:wrap; gap:20px 50px; align-items:center;">
@@ -430,13 +365,11 @@
       </div>
     </div>
     <div class="explanation">
-      <strong>Penjelasan:</strong> Dalam segitiga siku-siku ABC, <strong>sin β</strong> adalah perbandingan sisi depan (AC) dengan sisi miring (BC), sedangkan <strong>cos β</strong> adalah perbandingan sisi samping (AB) dengan sisi miring (BC). Nilai-nilai sudut istimewa di atas wajib dihafal karena sering muncul dalam soal vektor.
+      <strong>Penjelasan:</strong> Dalam segitiga siku-siku ABC, <strong>sin β</strong> adalah perbandingan sisi depan (AC) dengan sisi miring (BC), sedangkan <strong>cos β</strong> adalah perbandingan sisi samping (AB) dengan sisi miring (BC). Nilai sudut istimewa wajib dihafal.
     </div>
   </div>
 
-  <!-- ============================================================ -->
-  <!-- 2. SIMULASI : PENGURAIAN VEKTOR -->
-  <!-- ============================================================ -->
+  <!-- SIMULASI 1: PENGURAIAN VEKTOR -->
   <div class="card">
     <div class="card-title">📌 Simulasi 1 — Penguraian Vektor <span class="chip">F → F<sub>x</sub>, F<sub>y</sub></span></div>
     <div class="grid-2">
@@ -457,20 +390,18 @@
       <div>
         <div class="formula-box">F<sub>x</sub> = F · cos α &nbsp;&nbsp; F<sub>y</sub> = F · sin α</div>
         <div class="explanation">
-          <strong>Penjelasan:</strong> Sebuah vektor <strong>F</strong> (biru tua) dapat diuraikan menjadi dua komponen yang saling tegak lurus. 
-          <strong>F<sub>x</sub></strong> (merah) adalah proyeksi F pada sumbu X, dan <strong>F<sub>y</sub></strong> (hijau) adalah proyeksi F pada sumbu Y.
-          Geser sudut <strong>α</strong> dan besar <strong>F</strong> untuk melihat perubahan komponen.
+          <strong>Penjelasan:</strong> Vektor <strong>F</strong> (biru tua) diurai menjadi dua komponen tegak lurus.
+          <strong>F<sub>x</sub></strong> (merah) pada sumbu X, <strong>F<sub>y</sub></strong> (hijau) pada sumbu Y.
+          Geser sudut <strong>α</strong> dan besar <strong>F</strong>.
         </div>
         <p style="margin-top:10px; font-size:0.9rem; color:#2c3e5c;">
-          <strong>💡 Ingat:</strong> Komponen X selalu menggunakan cos, komponen Y selalu menggunakan sin.
+          <strong>💡 Ingat:</strong> Komponen X pakai cos, komponen Y pakai sin.
         </p>
       </div>
     </div>
   </div>
 
-  <!-- ============================================================ -->
-  <!-- 3. SIMULASI : PENJUMLAHAN 2 VEKTOR -->
-  <!-- ============================================================ -->
+  <!-- SIMULASI 2: PENJUMLAHAN VEKTOR -->
   <div class="card">
     <div class="card-title">➕ Simulasi 2 — Penjumlahan 2 Vektor <span class="chip">resultan R</span></div>
     <div class="grid-2">
@@ -493,20 +424,17 @@
       <div>
         <div class="formula-box">R = √(F₁² + F₂² + 2·F₁·F₂·cos α)</div>
         <div class="explanation">
-          <strong>Penjelasan:</strong> Dua vektor <strong>F₁</strong> (biru tua) dan <strong>F₂</strong> (ungu) dengan sudut <strong>α</strong> di antara keduanya.
-          Resultan <strong>R</strong> (merah) adalah diagonal jajaran genjang. Besar R dihitung dengan aturan kosinus,
-          sedangkan arah θ dihitung dari komponen-komponen resultan.
+          <strong>Penjelasan:</strong> F₁ (biru tua) dan F₂ (ungu) dengan sudut α.
+          Resultan <strong>R</strong> (merah) adalah diagonal jajaran genjang.
         </div>
         <p style="margin-top:10px; font-size:0.9rem; color:#2c3e5c;">
-          <strong>💡 Kasus khusus:</strong> α = 0° → R = F₁ + F₂ (searah), α = 180° → R = |F₁ − F₂| (berlawanan arah).
+          <strong>💡 Kasus khusus:</strong> α = 0° → R = F₁ + F₂, α = 180° → R = |F₁ − F₂|.
         </p>
       </div>
     </div>
   </div>
 
-  <!-- ============================================================ -->
-  <!-- 4. SIMULASI : VEKTOR POSISI & PERPINDAHAN -->
-  <!-- ============================================================ -->
+  <!-- SIMULASI 3: POSISI & PERPINDAHAN -->
   <div class="card">
     <div class="card-title">📍 Simulasi 3 — Vektor Posisi &amp; Perpindahan <span class="chip">P → Q</span></div>
     <div class="grid-2">
@@ -531,20 +459,17 @@
       <div>
         <div class="formula-box">Δr = √[(Q<sub>x</sub>−P<sub>x</sub>)² + (Q<sub>y</sub>−P<sub>y</sub>)²]</div>
         <div class="explanation">
-          <strong>Penjelasan:</strong> Titik <strong>P</strong> (biru tua) dan <strong>Q</strong> (hijau) adalah posisi partikel di bidang XY.
-          Vektor perpindahan <strong>Δr</strong> (merah) adalah selisih vektor posisi Q − P.
-          Besar Δr adalah jarak lurus antara P dan Q, sedangkan arahnya diukur dari sumbu X positif.
+          <strong>Penjelasan:</strong> P (biru tua) dan Q (hijau) adalah posisi partikel.
+          Vektor perpindahan <strong>Δr</strong> (merah) = Q − P.
         </div>
         <p style="margin-top:10px; font-size:0.9rem; color:#2c3e5c;">
-          <strong>💡 Ingat:</strong> Vektor posisi P = \(2\hat{i} + 4\hat{j}\), Q = \(6\hat{i} + 3\hat{j}\), maka Δr = \(4\hat{i} - 1\hat{j}\).
+          <strong>💡 Contoh:</strong> P(2,4), Q(6,3) → Δr = 4î − 1ĵ
         </p>
       </div>
     </div>
   </div>
 
-  <!-- ============================================================ -->
-  <!-- 5. VEKTOR SATUAN & DIMENSI 3 -->
-  <!-- ============================================================ -->
+  <!-- VEKTOR SATUAN & APLIKASI -->
   <div class="grid-2" style="margin-bottom:28px;">
     <div class="card" style="margin-bottom:0;">
       <div class="card-title">🧭 Vektor Satuan <span class="chip">î, ĵ, k̂</span></div>
@@ -558,9 +483,7 @@
         </p>
       </div>
       <div class="explanation" style="margin-top:14px;">
-        <strong>Penjelasan:</strong> Vektor satuan adalah vektor yang panjangnya 1 dan hanya berfungsi menunjukkan arah.
-        Dalam ruang 3D, setiap vektor dapat dinyatakan sebagai kombinasi linier dari î, ĵ, dan k̂.
-        <br><br>
+        <strong>Penjelasan:</strong> Vektor satuan panjangnya 1, hanya menunjukkan arah.
         <strong>Rumus vektor satuan:</strong> \(\hat{A} = \frac{\vec{A}}{|\vec{A}|}\)
       </div>
     </div>
@@ -580,14 +503,11 @@
       </div>
       <p style="margin-top:16px; color:#0a1628; font-size:1.05rem; line-height:1.7;">
         <strong>Vektor</strong> adalah bahasa insinyur dan ilmuwan untuk menggambarkan arah, gaya, kecepatan, dan medan.
-        Dari desain pesawat hingga animasi 3D, vektor ada di mana-mana.
       </p>
     </div>
   </div>
 
-  <!-- ============================================================ -->
-  <!-- 6. REFERENSI -->
-  <!-- ============================================================ -->
+  <!-- REFERENSI -->
   <div class="card" style="background:#f2f7fe;">
     <div class="card-title">📚 Sumber Referensi <span class="chip">kredibel</span></div>
     <div class="ref-list">
@@ -596,54 +516,42 @@
       <span class="ref-item">Kanginan, M. (2016). <em>Fisika untuk SMA/MA Kelas XI</em>. Erlangga.</span>
       <span class="ref-item">Young, H. D. & Freedman, R. A. (2016). <em>University Physics</em>. Pearson.</span>
     </div>
-    <p style="margin-top:10px; font-size:0.9rem; color:#2c3e5c;">
-      Materi ini mengacu pada kurikulum fisika SMA dan buku-buku fisika dasar yang digunakan di perguruan tinggi.
-    </p>
   </div>
 
-  <!-- ============================================================ -->
-  <!-- 7. SOAL LATIHAN + JAWABAN -->
-  <!-- ============================================================ -->
+  <!-- SOAL LATIHAN + JAWABAN -->
   <div class="card">
     <div class="card-title">📝 Soal Latihan <span class="chip">cek jawaban</span></div>
-
     <div class="soal-item">
       <p><strong>1.</strong> Partikel dari P(2, 4) ke Q(6, 3). Hitung besar perpindahan Δr (2 desimal).</p>
       <input type="text" id="jawab1" placeholder="misal 4.12" />
       <button class="btn-cek" onclick="cekJawaban(1, 4.12)">Cek</button>
       <div id="fb1" class="feedback"></div>
     </div>
-
     <div class="soal-item">
       <p><strong>2.</strong> Vektor gaya F = 5 N, sudut 35° terhadap sumbu X+. Berapa F<sub>x</sub>? (2 desimal)</p>
       <input type="text" id="jawab2" placeholder="misal 4.10" />
       <button class="btn-cek" onclick="cekJawaban(2, 4.10)">Cek</button>
       <div id="fb2" class="feedback"></div>
     </div>
-
     <div class="soal-item">
       <p><strong>3.</strong> F₁ = 4, F₂ = 3, α = 50°. Hitung resultan R (2 desimal).</p>
       <input type="text" id="jawab3" placeholder="misal 6.34" />
       <button class="btn-cek" onclick="cekJawaban(3, 6.34)">Cek</button>
       <div id="fb3" class="feedback"></div>
     </div>
-
-    <!-- Jawaban soal latihan (ditampilkan) -->
     <div class="jawaban-box">
       <strong>📌 Jawaban Soal Latihan:</strong><br>
-      <strong>1.</strong> P(2,4) → Q(6,3): Δr = 4î − 1ĵ → |Δr| = √(4² + (−1)²) = √17 ≈ <strong>4,12</strong> satuan, arah = −14,0° terhadap sumbu X+<br>
-      <strong>2.</strong> F = 5 N, α = 35°: F<sub>x</sub> = 5·cos 35° ≈ <strong>4,10</strong> N<br>
-      <strong>3.</strong> F₁ = 4, F₂ = 3, α = 50°: R = √(4² + 3² + 2·4·3·cos 50°) ≈ <strong>6,34</strong> satuan
+      <strong>1.</strong> Δr = 4î − 1ĵ → |Δr| = √17 ≈ <strong>4,12</strong> satuan, arah = −14,0°<br>
+      <strong>2.</strong> F<sub>x</sub> = 5·cos 35° ≈ <strong>4,10</strong> N<br>
+      <strong>3.</strong> R = √(4² + 3² + 2·4·3·cos 50°) ≈ <strong>6,34</strong>
     </div>
   </div>
 
-  <!-- ============================================================ -->
-  <!-- 8. SOAL GRAFIK MOBIL (dari PPT) -->
-  <!-- ============================================================ -->
+  <!-- SOAL GRAFIK MOBIL -->
   <div class="card" style="background:#f8faff;">
     <div class="card-title">📊 Soal Grafik Posisi Mobil <span class="chip">GLB</span></div>
     <p style="font-size:1.05rem; margin-bottom:12px; font-weight:500;">
-      Grafik posisi (x) terhadap waktu (t) dengan data: <strong>(0, 28), (5, 8), (8, −4)</strong>
+      Data: <strong>(0, 28), (5, 8), (8, −4)</strong>
     </p>
     <div style="display:grid; grid-template-columns:1fr 1fr; gap:12px; font-size:1.0rem; line-height:1.9;">
       <div style="background:#e8effb; padding:14px 20px; border-radius:16px;">
@@ -668,25 +576,23 @@
       </div>
     </div>
     <div class="explanation" style="margin-top:12px;">
-      <strong>Penjelasan:</strong> Dari data, terlihat bahwa grafik berupa garis lurus (GLB) dengan kecepatan tetap −4 m/s.
-      Persamaan posisi \(x(t) = 28 - 4t\). Titik acuan (x=0) dicapai saat t = 7 s.
+      <strong>Penjelasan:</strong> Grafik berupa garis lurus (GLB) dengan kecepatan tetap −4 m/s.
+      Persamaan \(x(t) = 28 - 4t\). Titik acuan saat t = 7 s.
     </div>
   </div>
 
-  <!-- ============================================================ -->
   <!-- FOOTER -->
-  <!-- ============================================================ -->
   <div class="footer">
     <span><strong>SMAK Kol. St. Yusup Malang</strong> · XI Fisika</span>
     <span>Kinematika Gerak 1 · Vektor</span>
-    <span style="opacity:0.7;">Simulasi interaktif dengan Canvas · 2026</span>
+    <span style="opacity:0.7;">Simulasi interaktif · 2026</span>
   </div>
 
 </div>
 
 <script>
   // ============================================================
-  // FUNGSI PANAH VEKTOR (PROFESIONAL, KEPALA BESAR & JELAS)
+  // FUNGSI PANAH VEKTOR — GARIS UTUH (TIDAK PUTUS-PUTUS)
   // ============================================================
   function drawArrow(ctx, fromX, fromY, toX, toY, color, lineWidth) {
     const dx = toX - fromX, dy = toY - fromY;
@@ -703,11 +609,13 @@
     ctx.lineCap = 'round';
     ctx.lineJoin = 'round';
 
+    // GARIS UTUH (tidak putus-putus)
     ctx.beginPath();
     ctx.moveTo(fromX, fromY);
     ctx.lineTo(toX, toY);
     ctx.stroke();
 
+    // Kepala panah
     ctx.beginPath();
     ctx.moveTo(toX, toY);
     ctx.lineTo(toX - headLen * Math.cos(angle - headAngle), toY - headLen * Math.sin(angle - headAngle));
@@ -740,7 +648,7 @@
     const cx = 160, cy = 255, scale = 32;
     ctxU.clearRect(0, 0, w, h);
 
-    // sumbu
+    // Sumbu
     ctxU.strokeStyle = '#b8cce0';
     ctxU.lineWidth = 1.5;
     ctxU.font = '15px Inter, sans-serif';
@@ -750,12 +658,12 @@
     ctxU.fillText('x', w-32, cy-10);
     ctxU.fillText('y', cx+14, 28);
 
-    // vektor F
+    // Vektor F — GARIS UTUH
     const fx = F * Math.cos(rad) * scale;
     const fy = -F * Math.sin(rad) * scale;
     drawArrow(ctxU, cx, cy, cx+fx, cy+fy, '#1a3a6b', 4);
 
-    // komponen Fx
+    // Komponen Fx — GARIS PUTUS-PUTUS (karena ini GARIS BANTU)
     ctxU.strokeStyle = '#dc2626';
     ctxU.lineWidth = 2.5;
     ctxU.setLineDash([6, 6]);
@@ -765,7 +673,7 @@
     ctxU.font = 'bold 14px Inter, sans-serif';
     ctxU.fillText('Fₓ = ' + (F*Math.cos(rad)).toFixed(2), cx+fx/2-30, cy+32);
 
-    // komponen Fy
+    // Komponen Fy — GARIS PUTUS-PUTUS (karena ini GARIS BANTU)
     ctxU.strokeStyle = '#16a34a';
     ctxU.lineWidth = 2.5;
     ctxU.setLineDash([6, 6]);
@@ -775,12 +683,12 @@
     ctxU.font = 'bold 14px Inter, sans-serif';
     ctxU.fillText('Fᵧ = ' + (F*Math.sin(rad)).toFixed(2), cx+fx+14, (cy+cy+fy)/2+6);
 
-    // label F
+    // Label F
     ctxU.fillStyle = '#0a1628';
     ctxU.font = 'bold 16px Inter, sans-serif';
     ctxU.fillText('F = ' + F.toFixed(1), cx+fx/2-18, cy+fy/2-18);
 
-    // sudut
+    // Sudut
     ctxU.strokeStyle = '#c9a84c';
     ctxU.lineWidth = 2.5;
     ctxU.beginPath(); ctxU.arc(cx, cy, 40, -rad, 0);
@@ -823,7 +731,7 @@
     const cx = 160, cy = 235, scale = 30;
     ctxJ.clearRect(0, 0, w, h);
 
-    // sumbu
+    // Sumbu
     ctxJ.strokeStyle = '#b8cce0';
     ctxJ.lineWidth = 1.5;
     ctxJ.font = '15px Inter, sans-serif';
@@ -833,14 +741,14 @@
     ctxJ.fillText('x', w-32, cy-10);
     ctxJ.fillText('y', cx+14, 28);
 
-    // F1
+    // F1 — GARIS UTUH
     const x1 = F1 * scale;
     drawArrow(ctxJ, cx, cy, cx+x1, cy, '#1a3a6b', 4);
     ctxJ.fillStyle = '#0a1628';
     ctxJ.font = 'bold 15px Inter, sans-serif';
     ctxJ.fillText('F₁', cx+x1/2-16, cy-18);
 
-    // F2
+    // F2 — GARIS UTUH
     const x2 = F2 * Math.cos(rad) * scale;
     const y2 = -F2 * Math.sin(rad) * scale;
     drawArrow(ctxJ, cx+x1, cy, cx+x1+x2, cy+y2, '#7c3aed', 4);
@@ -848,15 +756,15 @@
     ctxJ.font = 'bold 15px Inter, sans-serif';
     ctxJ.fillText('F₂', cx+x1+x2/2-18, cy+y2/2-18);
 
-    // Resultan
+    // Resultan R — GARIS UTUH (TIDAK PUTUS-PUTUS)
     const Rx = x1 + x2;
     const Ry = y2;
     ctxJ.strokeStyle = '#dc2626';
     ctxJ.lineWidth = 4;
-    ctxJ.setLineDash([8, 6]);
+    // TIDAK ADA setLineDash — GARIS UTUH
     ctxJ.beginPath(); ctxJ.moveTo(cx, cy); ctxJ.lineTo(cx+Rx, cy+Ry); ctxJ.stroke();
-    ctxJ.setLineDash([]);
 
+    // Kepala panah resultan
     const rLen = Math.sqrt(Rx*Rx + Ry*Ry);
     if (rLen > 5) {
       const angR = Math.atan2(Ry, Rx);
@@ -872,7 +780,7 @@
     ctxJ.font = 'bold 16px Inter, sans-serif';
     ctxJ.fillText('R', cx+Rx/2-16, cy+Ry/2-24);
 
-    // sudut α
+    // Sudut α
     ctxJ.strokeStyle = '#c9a84c';
     ctxJ.lineWidth = 2.5;
     ctxJ.beginPath(); ctxJ.arc(cx+x1, cy, 36, -rad, 0);
@@ -917,7 +825,7 @@
     const cx = margin, cy = h - margin;
     ctxP.clearRect(0, 0, w, h);
 
-    // sumbu
+    // Sumbu
     ctxP.strokeStyle = '#b8cce0';
     ctxP.lineWidth = 1.5;
     ctxP.font = '15px Inter, sans-serif';
@@ -930,28 +838,28 @@
     const px_ = cx + px*scale, py_ = cy - py*scale;
     const qx_ = cx + qx*scale, qy_ = cy - qy*scale;
 
-    // titik P
+    // Titik P
     ctxP.fillStyle = '#1a3a6b';
     ctxP.beginPath(); ctxP.arc(px_, py_, 9, 0, 2*Math.PI); ctxP.fill();
     ctxP.fillStyle = '#0a1628';
     ctxP.font = 'bold 14px Inter, sans-serif';
     ctxP.fillText('P(' + px + ',' + py + ')', px_-22, py_-18);
 
-    // titik Q
+    // Titik Q
     ctxP.fillStyle = '#16a34a';
     ctxP.beginPath(); ctxP.arc(qx_, qy_, 9, 0, 2*Math.PI); ctxP.fill();
     ctxP.fillStyle = '#0a1628';
     ctxP.font = 'bold 14px Inter, sans-serif';
     ctxP.fillText('Q(' + qx + ',' + qy + ')', qx_-22, qy_-18);
 
-    // vektor Δr
+    // Vektor Δr — GARIS UTUH (TIDAK PUTUS-PUTUS)
     const dx = qx_ - px_, dy = qy_ - py_;
     ctxP.strokeStyle = '#dc2626';
     ctxP.lineWidth = 4;
-    ctxP.setLineDash([8, 6]);
+    // TIDAK ADA setLineDash — GARIS UTUH
     ctxP.beginPath(); ctxP.moveTo(px_, py_); ctxP.lineTo(qx_, qy_); ctxP.stroke();
-    ctxP.setLineDash([]);
 
+    // Kepala panah Δr
     const len = Math.sqrt(dx*dx + dy*dy);
     if (len > 4) {
       const ang = Math.atan2(dy, dx);
